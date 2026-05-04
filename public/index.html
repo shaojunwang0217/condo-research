@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condo Research</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root { --bg: #0f172a; --surface: #1e293b; --surface2: #334155; --text: #f1f5f9; --text2: #94a3b8; --accent: #38bdf8; --green: #4ade80; --yellow: #fbbf24; --red: #f87171; --border: #475569; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  .header h1 { font-size: 22px; font-weight: 700; }
+  .header h1 span { color: var(--accent); font-size: 14px; font-weight: 400; }
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; }
+  .filters select, .filters input { background: var(--surface2); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; font-size: 13px; }
+  .filters select:focus, .filters input:focus { outline: none; border-color: var(--accent); }
+  .filters input::placeholder { color: var(--text2); }
+  .content { max-width: 1400px; margin: 0 auto; padding: 20px; }
+  .stats-bar { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; flex: 1; min-width: 140px; }
+  .stat-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text2); }
+  .stat-card .value { font-size: 24px; font-weight: 700; margin-top: 4px; }
+  .stat-card .value.green { color: var(--green); }
+  .table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .table-wrap table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .table-wrap th { background: var(--surface2); padding: 10px 12px; text-align: left; font-weight: 600; color: var(--text2); cursor: pointer; white-space: nowrap; user-select: none; position: sticky; top: 0; }
+  .table-wrap th:hover { color: var(--accent); }
+  .table-wrap th .sort-icon { margin-left: 4px; font-size: 10px; }
+  .table-wrap td { padding: 10px 12px; border-top: 1px solid var(--border); }
+  .table-wrap tr:hover td { background: rgba(56, 189, 248, 0.05); }
+  .table-wrap tr { cursor: pointer; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+  .badge.green { background: rgba(74, 222, 128, 0.15); color: var(--green); }
+  .badge.yellow { background: rgba(251, 191, 36, 0.15); color: var(--yellow); }
+  .badge.red { background: rgba(248, 113, 113, 0.15); color: var(--red); }
+  .badge.blue { background: rgba(56, 189, 248, 0.15); color: var(--accent); }
+  .loading { text-align: center; padding: 60px; color: var(--text2); }
+
+  /* Detail panel */
+  .detail-panel { display: none; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+  .detail-panel.open { display: block; }
+  .detail-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; }
+  .detail-title h2 { font-size: 24px; }
+  .detail-title .meta { color: var(--text2); font-size: 13px; margin-top: 4px; }
+  .detail-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .detail-stat { background: var(--surface2); padding: 12px; border-radius: 8px; }
+  .detail-stat .lbl { font-size: 11px; color: var(--text2); text-transform: uppercase; }
+  .detail-stat .val { font-size: 18px; font-weight: 600; margin-top: 2px; }
+  .close-btn { background: none; border: 1px solid var(--border); color: var(--text2); font-size: 20px; cursor: pointer; padding: 4px 12px; border-radius: 6px; }
+  .close-btn:hover { background: var(--surface2); }
+  .chart-wrap { max-height: 300px; margin-bottom: 20px; }
+  .txn-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .txn-table th { background: var(--surface2); padding: 8px 10px; text-align: left; color: var(--text2); font-weight: 600; }
+  .txn-table td { padding: 8px 10px; border-top: 1px solid var(--border); }
+  .return-bar { height: 6px; border-radius: 3px; background: var(--surface2); position: relative; overflow: hidden; min-width: 60px; }
+  .return-bar .fill { height: 100%; border-radius: 3px; position: absolute; left: 0; top: 0; }
+  @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }
+  .loading-pulse { animation: pulse 1.5s ease-in-out infinite; }
+
+  /* Responsive - Mobile First */
+  @media (max-width: 768px) {
+    .header { flex-direction: column; align-items: stretch; padding: 12px; }
+    .header h1 { font-size: 18px; }
+    .header h1 span { display: block; margin-top: 2px; }
+    .filters { gap: 6px; }
+    .filters { display: grid; grid-template-columns: 1fr 1fr; }
+    .filters input[type="text"] { grid-column: 1 / -1; }
+    .filters select, .filters input { font-size: 14px; padding: 10px 10px; width: 100%; }
+    .filters input { min-width: 0; }
+    .content { padding: 12px; }
+    .stats-bar { gap: 8px; }
+    .stat-card { min-width: calc(50% - 8px); padding: 10px 14px; }
+    .stat-card .value { font-size: 20px; }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-wrap table { font-size: 12px; min-width: 700px; }
+    .table-wrap th, .table-wrap td { padding: 10px 8px; }
+    .detail-panel { padding: 16px; }
+    .detail-title h2 { font-size: 20px; }
+    .detail-stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .detail-stat { padding: 10px; }
+    .detail-stat .val { font-size: 16px; }
+    .chart-wrap { max-height: 250px; }
+    .txn-table { font-size: 11px; min-width: 650px; }
+    .txn-table th, .txn-table td { padding: 6px 6px; }
+  }
+
+  @media (pointer: coarse) {
+    .table-wrap tr { cursor: default; }
+    .table-wrap tr:active td { background: rgba(56, 189, 248, 0.12); }
+  }
+
+  @media (max-width: 480px) {
+    .header h1 { font-size: 16px; }
+    .stat-card { min-width: 100%; }
+    .stat-card .value { font-size: 18px; }
+    .detail-stats { grid-template-columns: repeat(2, 1fr); }
+    .chart-wrap { max-height: 220px; }
+  }
+
+  /* Animation */
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .table-wrap tr { animation: fadeIn 0.3s ease; }
+  .table-wrap tr:nth-child(1) { animation-delay: 0s; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🏢 Condo Research <span>post-2020 buyer returns</span></h1>
+  <div class="filters">
+    <select id="districtFilter"><option value="">All Districts</option></select>
+    <select id="areaFilter"><option value="">All Areas</option></select>
+    <input type="text" id="searchFilter" placeholder="Search condo name..." />
+    <select id="minTxnFilter"><option value="0">Min txns: Any</option><option value="2">≥ 2</option><option value="5">≥ 5</option><option value="10">≥ 10</option><option value="20">≥ 20</option></select>
+  </div>
+</div>
+
+<div class="content">
+  <div class="stats-bar" id="statsBar"></div>
+
+  <div class="detail-panel" id="detailPanel">
+    <div class="detail-header">
+      <div class="detail-title">
+        <h2 id="detailName">—</h2>
+        <div class="meta" id="detailMeta"></div>
+      </div>
+      <button class="close-btn" onclick="closeDetail()">✕</button>
+    </div>
+    <div class="detail-stats" id="detailStats"></div>
+    <div class="chart-wrap"><canvas id="txnChart"></canvas></div>
+    <h3 style="font-size:14px;color:var(--text2);margin-bottom:8px;">Transaction History</h3>
+    <div style="overflow-x:auto"><table class="txn-table" id="txnTable"><thead><tr><th>Buy Date</th><th>Sell Date</th><th>Hold (yrs)</th><th>Buy Price</th><th>Sell Price</th><th>Size</th><th>Buy PSF</th><th>Sell PSF</th><th>Annualized Return</th></tr></thead><tbody id="txnBody"></tbody></table></div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortBy('name')">Condo <span class="sort-icon" id="s-name">▽</span></th>
+          <th onclick="sortBy('district')">Dist <span class="sort-icon" id="s-district">▽</span></th>
+          <th onclick="sortBy('year_completed')">Year <span class="sort-icon" id="s-year_completed">▽</span></th>
+          <th onclick="sortBy('avg_annualized')">Avg Ann. Return <span class="sort-icon" id="s-avg_annualized">▽</span></th>
+          <th onclick="sortBy('max_annualized')">Max Ann. <span class="sort-icon" id="s-max_annualized">▽</span></th>
+          <th onclick="sortBy('min_annualized')">Min Ann. <span class="sort-icon" id="s-min_annualized">▽</span></th>
+          <th onclick="sortBy('total_txns')">Txns <span class="sort-icon" id="s-total_txns">▽</span></th>
+          <th onclick="sortBy('current_avg_psf')">Avg PSF <span class="sort-icon" id="s-current_avg_psf">▽</span></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+let allCondos = [];
+let currentSort = 'avg_annualized';
+let currentDir = 'desc';
+let chartInstance = null;
+
+function formatSGD(n) {
+  return 'S$' + Math.round(n).toLocaleString();
+}
+
+function retBadge(val) {
+  if (val >= 8) return `<span class="badge green">${val.toFixed(1)}%</span>`;
+  if (val >= 5) return `<span class="badge yellow">${val.toFixed(1)}%</span>`;
+  return `<span class="badge red">${val.toFixed(1)}%</span>`;
+}
+
+function txnBadge(n) {
+  if (n >= 20) return `<span class="badge green">${n}</span>`;
+  if (n >= 5) return `<span class="badge yellow">${n}</span>`;
+  if (n >= 1) return `<span class="badge red">${n}</span>`;
+  return `<span class="badge" style="background:rgba(148,163,184,0.1);color:var(--text2)">${n}</span>`;
+}
+
+function retBar(val) {
+  const pct = Math.min(val / 15 * 100, 100);
+  const color = val >= 8 ? 'var(--green)' : val >= 5 ? 'var(--yellow)' : 'var(--red)';
+  return `<div class="return-bar"><div class="fill" style="width:${pct}%;background:${color}"></div></div>`;
+}
+
+async function loadDistricts() {
+  const res = await fetch('/api/districts');
+  const districts = await res.json();
+  const sel = document.getElementById('districtFilter');
+  districts.forEach(d => { sel.innerHTML += `<option value="${d}">${d}</option>`; });
+}
+
+async function loadAreas() {
+  const res = await fetch('/api/areas');
+  const areas = await res.json();
+  const sel = document.getElementById('areaFilter');
+  areas.forEach(a => { sel.innerHTML += `<option value="${a}">${a}</option>`; });
+}
+
+async function loadCondos() {
+  const params = new URLSearchParams();
+  const d = document.getElementById('districtFilter').value;
+  const a = document.getElementById('areaFilter').value;
+  const s = document.getElementById('searchFilter').value;
+  const m = document.getElementById('minTxnFilter').value;
+  if (d) params.set('district', d);
+  if (a) params.set('area', a);
+  if (s) params.set('search', s);
+  if (m && m !== '0') params.set('minTxn', m);
+  params.set('sortBy', currentSort);
+  params.set('sortDir', currentDir);
+
+  document.getElementById('tableBody').innerHTML = '<tr><td colspan="8" class="loading">Loading...</td></tr>';
+
+  const res = await fetch('/api/condos?' + params);
+  allCondos = await res.json();
+  renderTable();
+  updateStats();
+}
+
+function renderTable() {
+  const tbody = document.getElementById('tableBody');
+  if (allCondos.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="8" class="loading">No condos found. Try different filters.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = allCondos.map(c => `
+    <tr onclick="openDetail(${c.id})">
+      <td><strong>${c.name}</strong></td>
+      <td><span class="badge blue">${c.district}</span></td>
+      <td>${c.year_completed || '—'}</td>
+      <td>${c.avg_annualized != null ? retBadge(c.avg_annualized) : '—'}</td>
+      <td>${c.max_annualized != null ? retBadge(c.max_annualized) : '—'}</td>
+      <td>${c.min_annualized != null ? retBadge(c.min_annualized) : '—'}</td>
+      <td>${txnBadge(c.total_txns || 0)}</td>
+      <td>${c.current_avg_psf ? `S$${Math.round(c.current_avg_psf).toLocaleString()}` : '—'}</td>
+    </tr>
+  `).join('');
+}
+
+function updateStats() {
+  if (allCondos.length === 0) { document.getElementById('statsBar').innerHTML = ''; return; }
+  const avgAll = allCondos.reduce((s, c) => s + (c.avg_annualized || 0), 0) / allCondos.length;
+  const best = allCondos.reduce((b, c) => (c.avg_annualized || 0) > (b.avg_annualized || 0) ? c : b, allCondos[0]);
+  const totalTxns = allCondos.reduce((s, c) => s + (c.total_txns || 0), 0);
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat-card"><div class="label">Condos</div><div class="value">${allCondos.length}</div></div>
+    <div class="stat-card"><div class="label">Avg Return</div><div class="value green">${avgAll.toFixed(1)}%</div></div>
+    <div class="stat-card"><div class="label">Top Performer</div><div class="value" style="font-size:16px">${best.name}<span style="color:var(--green);font-size:14px;margin-left:6px">${best.avg_annualized?.toFixed(1)}%</span></div></div>
+    <div class="stat-card"><div class="label">Total Txns</div><div class="value">${totalTxns}</div></div>
+  `;
+}
+
+function sortBy(col) {
+  if (currentSort === col) currentDir = currentDir === 'desc' ? 'asc' : 'desc';
+  else { currentSort = col; currentDir = 'desc'; }
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '▽');
+  const icon = document.getElementById('s-' + col);
+  if (icon) icon.textContent = currentDir === 'desc' ? '▽' : '△';
+  loadCondos();
+}
+
+async function openDetail(id) {
+  const panel = document.getElementById('detailPanel');
+  panel.classList.add('open');
+  document.getElementById('detailName').textContent = 'Loading...';
+
+  const res = await fetch(`/api/condos/${id}`);
+  const data = await res.json();
+
+  document.getElementById('detailName').textContent = data.name;
+  document.getElementById('detailMeta').textContent = `${data.district} · ${data.area} · ${data.year_completed || '—'} · ${data.tenure}`;
+
+  document.getElementById('detailStats').innerHTML = `
+    <div class="detail-stat"><div class="lbl">Avg Return</div><div class="val" style="color:${data.avg_annualized >= 8 ? 'var(--green)' : data.avg_annualized >= 5 ? 'var(--yellow)' : 'var(--red)'}">${data.avg_annualized?.toFixed(1) || '—'}%</div></div>
+    <div class="detail-stat"><div class="lbl">Max Return</div><div class="val" style="color:var(--green)">${data.max_annualized?.toFixed(1) || '—'}%</div></div>
+    <div class="detail-stat"><div class="lbl">Min Return</div><div class="val" style="color:var(--red)">${data.min_annualized?.toFixed(1) || '—'}%</div></div>
+    <div class="detail-stat"><div class="lbl">Transactions</div><div class="val">${data.total_txns || 0}</div></div>
+    <div class="detail-stat"><div class="lbl">Avg PSF</div><div class="val">${data.current_avg_psf ? 'S$' + Math.round(data.current_avg_psf).toLocaleString() : '—'}</div></div>
+    <div class="detail-stat"><div class="lbl">Total Units</div><div class="val">${data.total_units || '—'}</div></div>
+    <div class="detail-stat"><div class="lbl">MRT</div><div class="val" style="font-size:13px">${data.mrt_station || '—'}</div></div>
+    <div class="detail-stat"><div class="lbl">Developer</div><div class="val" style="font-size:13px">${data.developer || '—'}</div></div>
+  `;
+
+  // Transaction table
+  const tbody = document.getElementById('txnBody');
+  tbody.innerHTML = data.transactions.map(t => {
+    const buyPsf = t.buy_price / t.size_sqft;
+    const sellPsf = t.sell_price / t.size_sqft;
+    const holdYears = (new Date(t.sell_date) - new Date(t.buy_date)) / (365.25 * 24 * 60 * 60 * 1000);
+    return `<tr>
+      <td>${t.buy_date}</td><td>${t.sell_date}</td>
+      <td>${holdYears.toFixed(1)}</td>
+      <td>${formatSGD(t.buy_price)}</td>
+      <td>${formatSGD(t.sell_price)}</td>
+      <td>${t.size_sqft} sqft</td>
+      <td>S$${Math.round(buyPsf).toLocaleString()}</td>
+      <td>S$${Math.round(sellPsf).toLocaleString()}</td>
+      <td>${retBadge(t.annualized_return || 0)}</td>
+    </tr>`;
+  }).join('');
+
+  // Chart
+  renderChart(data.transactions, data.name);
+
+  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function closeDetail() {
+  document.getElementById('detailPanel').classList.remove('open');
+  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+}
+
+/** Polynomial regression: degree-2 least squares fit */
+function polyFit(xs, ys) {
+  const n = xs.length;
+  if (n < 3) return null;
+  const m = 3;
+  const X = Array.from({ length: m }, () => Array(m).fill(0));
+  const Y = Array(m).fill(0);
+  for (let i = 0; i < n; i++) {
+    const x = xs[i], y = ys[i];
+    let xp = 1;
+    for (let r = 0; r < m; r++) {
+      Y[r] += y * xp;
+      let xq = xp;
+      for (let c = 0; c < m; c++) { X[r][c] += xq; xq *= x; }
+      xp *= x;
+    }
+  }
+  for (let i = 0; i < m; i++) {
+    let maxRow = i;
+    for (let k = i + 1; k < m; k++) if (Math.abs(X[k][i]) > Math.abs(X[maxRow][i])) maxRow = k;
+    [X[i], X[maxRow]] = [X[maxRow], X[i]];
+    [Y[i], Y[maxRow]] = [Y[maxRow], Y[i]];
+    for (let k = i + 1; k < m; k++) {
+      const factor = X[k][i] / X[i][i];
+      for (let j = i; j < m; j++) X[k][j] -= factor * X[i][j];
+      Y[k] -= factor * Y[i];
+    }
+  }
+  const coeffs = Array(m).fill(0);
+  for (let i = m - 1; i >= 0; i--) {
+    coeffs[i] = Y[i];
+    for (let j = i + 1; j < m; j++) coeffs[i] -= X[i][j] * coeffs[j];
+    coeffs[i] /= X[i][i];
+  }
+  return function(x) {
+    let r = 0, xp = 1;
+    for (let i = 0; i < coeffs.length; i++) { r += coeffs[i] * xp; xp *= x; }
+    return r;
+  };
+}
+
+function renderChart(txns, condoName) {
+  if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
+
+  const sorted = [...txns].sort((a, b) => new Date(a.sell_date) - new Date(b.sell_date));
+  const hasTrend = sorted.length >= 3;
+
+  // Compute numeric x values (days since first sell date)
+  const firstDateMs = sorted.length > 0 ? new Date(sorted[0].sell_date).getTime() : 0;
+  const pts = sorted.map(t => ({
+    x: (new Date(t.sell_date).getTime() - firstDateMs) / (1000 * 60 * 60 * 24),
+    y: +(t.annualized_return || 0).toFixed(2)
+  }));
+
+  // Polynomial trendline
+  let trendPts = [];
+  if (hasTrend) {
+    const xs = pts.map(p => p.x);
+    const ys = pts.map(p => p.y);
+    const fn = polyFit(xs, ys);
+    if (fn) {
+      const minX = Math.min(...xs), maxX = Math.max(...xs);
+      for (let i = 0; i <= 50; i++) {
+        const x = minX + (maxX - minX) * (i / 50);
+        trendPts.push({ x: x, y: +fn(x).toFixed(2) });
+      }
+    }
+  }
+
+  const ctx = document.getElementById('txnChart').getContext('2d');
+  chartInstance = new Chart(ctx, {
+    type: 'scatter',
+    data: {
+      datasets: [
+        {
+          label: 'Annualized Return %',
+          data: pts,
+          backgroundColor: sorted.map(t => (t.annualized_return || 0) >= 8 ? 'rgba(74,222,128,0.8)' : (t.annualized_return || 0) >= 5 ? 'rgba(251,191,36,0.8)' : 'rgba(248,113,113,0.8)'),
+          borderColor: sorted.map(t => (t.annualized_return || 0) >= 8 ? '#4ade80' : (t.annualized_return || 0) >= 5 ? '#fbbf24' : '#f87171'),
+          pointRadius: 6,
+          pointHoverRadius: 9
+        },
+        ...(trendPts.length > 0 ? [{
+          label: 'Polynomial Trend (2°)',
+          data: trendPts,
+          type: 'line',
+          borderColor: '#38bdf8',
+          fill: false,
+          pointRadius: 0,
+          borderWidth: 2,
+          borderDash: [5, 3],
+          tension: 0.3
+        }] : [])
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: '#94a3b8', font: { size: 11 } } },
+        title: {
+          display: true,
+          text: (hasTrend ? (trendPts.length > 0 ? 'Annualized Return with Polynomial Trendline' : 'Annualized Return per Transaction') : 'Not enough data for trendline'),
+          color: '#94a3b8',
+          font: { size: 12 }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(ctx) {
+              if (ctx.dataset.label.includes('Trend')) return '';
+              const idx = pts.indexOf(ctx.raw);
+              const t = sorted[idx];
+              if (!t) return ' ' + ctx.parsed.y + '%';
+              return ' ' + t.buy_date + ' → ' + t.sell_date + ': ' + ctx.parsed.y + '%';
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          grid: { color: 'rgba(71,85,105,0.3)' },
+          ticks: { color: '#94a3b8', callback: v => v + '%' }
+        },
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: '#94a3b8',
+            font: { size: 9 },
+            callback: function(val) {
+              // Find closest transaction by sell_date
+              for (let i = 0; i < pts.length; i++) {
+                const d = pts[i].x;
+                if (Math.abs(d - val) < 2 || (i < pts.length - 1 && val >= d && val < pts[i+1].x)) {
+                  const s = sorted[i].sell_date;
+                  return s.substring(2);
+                }
+              }
+              return '';
+            }
+          }
+        }
+      }
+    }
+  });
+}
+
+// Event listeners
+document.getElementById('districtFilter').addEventListener('change', loadCondos);
+document.getElementById('areaFilter').addEventListener('change', loadCondos);
+document.getElementById('searchFilter').addEventListener('input', () => {
+  clearTimeout(window._searchTimer);
+  window._searchTimer = setTimeout(loadCondos, 300);
+});
+document.getElementById('minTxnFilter').addEventListener('change', loadCondos);
+
+// Init
+loadDistricts();
+loadAreas();
+loadCondos();
+</script>
+</body>
+</html>
