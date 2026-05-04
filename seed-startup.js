@@ -12,7 +12,7 @@ function seed() {
     return;
   }
 
-  const filePath = path.join(__dirname, "seed-data.json");
+  const filePath = path.join(__dirname, "public", "seed-data.json");
   if (!fs.existsSync(filePath)) {
     console.log("No seed-data.json found, starting empty");
     return;
