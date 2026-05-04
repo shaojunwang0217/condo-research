@@ -22,6 +22,9 @@ parse-*.js
 seed.txt
 seed-tmp.txt
 
+# Except the startup seed script used for Render
+!seed-startup.js
+
 # Workspace cruft
 *.xlsx
 
