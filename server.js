@@ -3,7 +3,8 @@ const cors = require('cors');
 const path = require('path');
 const { getDb } = require('./db');
 
-// Seed on startup (safe: only seeds if DB is empty)
+// Seed on startup — loads 85 condos + 1798 txns from bundled JSON
+console.log('Checking for seed data...');
 require('./seed-startup');
 
 const app = express();

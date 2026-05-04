@@ -5,25 +5,26 @@ const path = require("path");
 function seed() {
   const db = getDb();
 
-  // Check if data exists
-  const count = db.prepare("SELECT COUNT(*) as c FROM condos").get();
-  if (count.c > 0) {
-    console.log(`DB already has ${count.c} condos, skipping seed`);
-    return;
-  }
-
+  // Always attempt to seed from the bundled data file
   const filePath = path.join(__dirname, "public", "seed-data.json");
   if (!fs.existsSync(filePath)) {
     console.log("No seed-data.json found, starting empty");
     return;
   }
 
+  // Check if already seeded
+  const count = db.prepare("SELECT COUNT(*) as c FROM condos").get();
+  if (count.c > 0) {
+    console.log(`DB already has ${count.c} condos, skipping seed`);
+    return;
+  }
+
   const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
   console.log(`Seeding ${data.condos.length} condos, ${data.transactions.length} txns...`);
 
-  const insertCondo = db.prepare(`INSERT INTO condos (id, name, district, area, tenure, year_completed, total_units, developer, mrt_station, mrt_distance) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
-  const insertStat = db.prepare(`INSERT INTO project_stats (condo_id, total_txns, avg_annualized, max_annualized, min_annualized, current_avg_psf, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT(condo_id) DO UPDATE SET total_txns = excluded.total_txns, avg_annualized = excluded.avg_annualized, max_annualized = excluded.max_annualized, min_annualized = excluded.min_annualized, current_avg_psf = excluded.current_avg_psf, updated_at = excluded.updated_at`);
-  const insertTxn = db.prepare(`INSERT INTO transactions (id, condo_id, buy_date, sell_date, buy_price, sell_price, size_sqft, unit_type, floor_level, annualized_return, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+  const insertCondo = db.prepare(`INSERT OR IGNORE INTO condos (id, name, district, area, tenure, year_completed, total_units, developer, mrt_station, mrt_distance) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
+  const insertStat = db.prepare(`INSERT OR IGNORE INTO project_stats (condo_id, total_txns, avg_annualized, max_annualized, min_annualized, current_avg_psf, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)`);
+  const insertTxn = db.prepare(`INSERT OR IGNORE INTO transactions (id, condo_id, buy_date, sell_date, buy_price, sell_price, size_sqft, unit_type, floor_level, annualized_return, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`);
 
   const tx = db.transaction(() => {
     for (const c of data.condos) {
@@ -38,7 +39,7 @@ function seed() {
   });
 
   tx();
-  console.log("Seed complete");
+  console.log("Seed complete:", data.condos.length, "condos,", data.transactions.length, "txns");
 }
 
 seed();
