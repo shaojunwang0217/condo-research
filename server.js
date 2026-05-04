@@ -3,6 +3,9 @@ const cors = require('cors');
 const path = require('path');
 const { getDb } = require('./db');
 
+// Seed on startup (safe: only seeds if DB is empty)
+require('./seed-startup');
+
 const app = express();
 const PORT = process.env.PORT || 3456;
 

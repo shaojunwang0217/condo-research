@@ -24,3 +24,6 @@ seed-tmp.txt
 
 # Workspace cruft
 *.xlsx
+
+# Seed data (large JSON export, not in repo)
+seed-data.json
