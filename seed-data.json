@@ -1916,6 +1916,16 @@
       "current_avg_psf": 1819,
       "rental_yield": null,
       "updated_at": "2026-05-05 08:06:56"
+    },
+    {
+      "condo_id": 86,
+      "total_txns": 6,
+      "avg_annualized": 3.15,
+      "max_annualized": 4.3,
+      "min_annualized": 1.9,
+      "current_avg_psf": 2390.2,
+      "rental_yield": null,
+      "updated_at": "2026-05-05 08:08:52"
     }
   ],
   "transactions": [
@@ -24499,6 +24509,84 @@
       "floor_level": "#40-XX",
       "annualized_return": -1.8,
       "created_at": "2026-05-05 08:06:56"
+    },
+    {
+      "id": 1786,
+      "condo_id": 86,
+      "buy_date": "2021-04-21",
+      "sell_date": "2025-03-28",
+      "buy_price": 836140,
+      "sell_price": 931200,
+      "size_sqft": 388,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#09-XX",
+      "annualized_return": 2.8,
+      "created_at": "2026-05-05 08:08:52"
+    },
+    {
+      "id": 1787,
+      "condo_id": 86,
+      "buy_date": "2021-02-08",
+      "sell_date": "2024-02-21",
+      "buy_price": 839244,
+      "sell_price": 919172,
+      "size_sqft": 388,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#18-XX",
+      "annualized_return": 3,
+      "created_at": "2026-05-05 08:08:52"
+    },
+    {
+      "id": 1788,
+      "condo_id": 86,
+      "buy_date": "2021-01-22",
+      "sell_date": "2025-09-24",
+      "buy_price": 826052,
+      "sell_price": 901324,
+      "size_sqft": 388,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#09-XX",
+      "annualized_return": 1.9,
+      "created_at": "2026-05-05 08:08:52"
+    },
+    {
+      "id": 1789,
+      "condo_id": 86,
+      "buy_date": "2020-12-29",
+      "sell_date": "2024-10-11",
+      "buy_price": 846228,
+      "sell_price": 976208,
+      "size_sqft": 388,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#27-XX",
+      "annualized_return": 3.9,
+      "created_at": "2026-05-05 08:08:52"
+    },
+    {
+      "id": 1790,
+      "condo_id": 86,
+      "buy_date": "2020-10-23",
+      "sell_date": "2023-12-27",
+      "buy_price": 808980,
+      "sell_price": 926156,
+      "size_sqft": 388,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#20-XX",
+      "annualized_return": 4.3,
+      "created_at": "2026-05-05 08:08:52"
+    },
+    {
+      "id": 1791,
+      "condo_id": 86,
+      "buy_date": "2020-08-18",
+      "sell_date": "2025-04-15",
+      "buy_price": 791132,
+      "sell_price": 909084,
+      "size_sqft": 388,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#08-XX",
+      "annualized_return": 3,
+      "created_at": "2026-05-05 08:08:52"
     }
   ]
 }
