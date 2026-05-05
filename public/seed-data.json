@@ -1143,19 +1143,6 @@
       "mrt_station": "Sembawang MRT",
       "mrt_distance": "5 min",
       "created_at": "2026-05-05 08:17:16"
-    },
-    {
-      "id": 105,
-      "name": "PARC GREENWOOD",
-      "district": "D23",
-      "area": "Tengah",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2023,
-      "total_units": 275,
-      "developer": "Qingjian Realty",
-      "mrt_station": "Tengah Plantation MRT",
-      "mrt_distance": "5 min",
-      "created_at": "2026-05-05 08:17:16"
     }
   ],
   "project_stats": [
