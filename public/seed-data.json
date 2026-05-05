@@ -2151,6 +2151,16 @@
       "current_avg_psf": 1764,
       "rental_yield": null,
       "updated_at": "2026-05-05 08:41:24"
+    },
+    {
+      "condo_id": 91,
+      "total_txns": 4,
+      "avg_annualized": 11.675,
+      "max_annualized": 15.7,
+      "min_annualized": 8.3,
+      "current_avg_psf": 1200.25,
+      "rental_yield": null,
+      "updated_at": "2026-05-05 08:45:43"
     }
   ],
   "transactions": [
@@ -25306,6 +25316,58 @@
       "floor_level": "#15-XX",
       "annualized_return": 4.3,
       "created_at": "2026-05-05 08:41:24"
+    },
+    {
+      "id": 1830,
+      "condo_id": 91,
+      "buy_date": "2020-11-10",
+      "sell_date": "2024-08-05",
+      "buy_price": 1349685,
+      "sell_price": 1830285,
+      "size_sqft": 1335,
+      "unit_type": "3 BEDROOM",
+      "floor_level": "#08-XX",
+      "annualized_return": 8.5,
+      "created_at": "2026-05-05 08:45:43"
+    },
+    {
+      "id": 1831,
+      "condo_id": 91,
+      "buy_date": "2020-10-28",
+      "sell_date": "2024-11-15",
+      "buy_price": 1849720,
+      "sell_price": 2559250,
+      "size_sqft": 1765,
+      "unit_type": "4 BEDROOM",
+      "floor_level": "#06-XX",
+      "annualized_return": 8.3,
+      "created_at": "2026-05-05 08:45:43"
+    },
+    {
+      "id": 1832,
+      "condo_id": 91,
+      "buy_date": "2020-08-13",
+      "sell_date": "2025-03-27",
+      "buy_price": 1999872,
+      "sell_price": 3687936,
+      "size_sqft": 3584,
+      "unit_type": "4 BEDROOM",
+      "floor_level": "#10-XX",
+      "annualized_return": 14.2,
+      "created_at": "2026-05-05 08:45:43"
+    },
+    {
+      "id": 1833,
+      "condo_id": 91,
+      "buy_date": "2020-07-15",
+      "sell_date": "2023-07-18",
+      "buy_price": 2698426,
+      "sell_price": 4186302,
+      "size_sqft": 4402,
+      "unit_type": "4 BEDROOM",
+      "floor_level": "#10-XX",
+      "annualized_return": 15.7,
+      "created_at": "2026-05-05 08:45:43"
     }
   ]
 }
