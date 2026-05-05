@@ -10,7 +10,8 @@
       "total_units": 714,
       "developer": "UOL Group",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "700m (9 min)"
+      "mrt_distance": "700m (9 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "total_units": 152,
       "developer": "UOL Group",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "750m (10 min)"
+      "mrt_distance": "750m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "total_units": 306,
       "developer": "City Developments",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "650m (8 min)"
+      "mrt_distance": "650m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 4,
@@ -46,7 +49,8 @@
       "total_units": 396,
       "developer": "Wing Tai Holdings",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "550m (7 min)"
+      "mrt_distance": "550m (7 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 5,
@@ -58,7 +62,8 @@
       "total_units": 546,
       "developer": "Wing Tai / UOL / Kheng Leong",
       "mrt_station": "Boon Keng MRT",
-      "mrt_distance": "600m (8 min)"
+      "mrt_distance": "600m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 6,
@@ -70,7 +75,8 @@
       "total_units": 213,
       "developer": "Frasers",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "800m (10 min)"
+      "mrt_distance": "800m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 7,
@@ -82,7 +88,8 @@
       "total_units": 273,
       "developer": "Times Development (SPH)",
       "mrt_station": "Caldecott MRT",
-      "mrt_distance": "500m (6 min)"
+      "mrt_distance": "500m (6 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 8,
@@ -94,7 +101,8 @@
       "total_units": 106,
       "developer": "Allgreen",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "700m (9 min)"
+      "mrt_distance": "700m (9 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 9,
@@ -106,7 +114,8 @@
       "total_units": 115,
       "developer": "Wing Tai",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "450m (6 min)"
+      "mrt_distance": "450m (6 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 10,
@@ -118,7 +127,8 @@
       "total_units": 394,
       "developer": "EL Development",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "600m (8 min)"
+      "mrt_distance": "600m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 11,
@@ -130,7 +140,8 @@
       "total_units": 521,
       "developer": "UOL / Kheng Leong",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "300m (4 min)"
+      "mrt_distance": "300m (4 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 12,
@@ -142,7 +153,8 @@
       "total_units": 716,
       "developer": "Allgreen",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "800m (10 min)"
+      "mrt_distance": "800m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 13,
@@ -154,7 +166,8 @@
       "total_units": 573,
       "developer": "MCL Land",
       "mrt_station": "Ranggung LRT",
-      "mrt_distance": "300m (4 min)"
+      "mrt_distance": "300m (4 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 14,
@@ -166,7 +179,8 @@
       "total_units": 625,
       "developer": "Frasers",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "750m (10 min)"
+      "mrt_distance": "750m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 15,
@@ -178,7 +192,8 @@
       "total_units": 1145,
       "developer": "MCL Land",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "900m (12 min)"
+      "mrt_distance": "900m (12 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 16,
@@ -190,7 +205,8 @@
       "total_units": 928,
       "developer": "Frasers / Far East",
       "mrt_station": "Ranggung LRT",
-      "mrt_distance": "400m (5 min)"
+      "mrt_distance": "400m (5 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 17,
@@ -202,7 +218,8 @@
       "total_units": 1157,
       "developer": "Kingsford",
       "mrt_station": "Ranggung LRT",
-      "mrt_distance": "500m (7 min)"
+      "mrt_distance": "500m (7 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 18,
@@ -214,7 +231,8 @@
       "total_units": 999,
       "developer": "Oxley / Lian Beng",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "900m (12 min)"
+      "mrt_distance": "900m (12 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 19,
@@ -226,7 +244,8 @@
       "total_units": 514,
       "developer": "Tampines EC Pte Ltd",
       "mrt_station": "Tampines MRT",
-      "mrt_distance": "940m (11 min)"
+      "mrt_distance": "940m (11 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 20,
@@ -238,7 +257,8 @@
       "total_units": 299,
       "developer": "Wing Tai",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "800m (10 min)"
+      "mrt_distance": "800m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 21,
@@ -250,7 +270,8 @@
       "total_units": 376,
       "developer": "UOL",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "700m (9 min)"
+      "mrt_distance": "700m (9 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 22,
@@ -262,7 +283,8 @@
       "total_units": 470,
       "developer": "EL Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "850m (11 min)"
+      "mrt_distance": "850m (11 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 23,
@@ -274,7 +296,8 @@
       "total_units": 435,
       "developer": "City Developments",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "900m (12 min)"
+      "mrt_distance": "900m (12 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 24,
@@ -286,7 +309,8 @@
       "total_units": 345,
       "developer": "QingJian",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "600m (8 min)"
+      "mrt_distance": "600m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 25,
@@ -298,7 +322,8 @@
       "total_units": 420,
       "developer": "Far East",
       "mrt_station": "Tampines MRT",
-      "mrt_distance": "1000m (13 min)"
+      "mrt_distance": "1000m (13 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 26,
@@ -310,7 +335,8 @@
       "total_units": 267,
       "developer": "Bukit Sembawang",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "750m (10 min)"
+      "mrt_distance": "750m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 27,
@@ -322,7 +348,8 @@
       "total_units": 348,
       "developer": "Frasers / Far East",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "500m (7 min)"
+      "mrt_distance": "500m (7 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 28,
@@ -334,7 +361,8 @@
       "total_units": 622,
       "developer": "Keppel Land Realty",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "300m (4 min)"
+      "mrt_distance": "300m (4 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 29,
@@ -346,7 +374,8 @@
       "total_units": 810,
       "developer": "EL Development",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "170m (2 min)"
+      "mrt_distance": "170m (2 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 30,
@@ -358,7 +387,8 @@
       "total_units": 517,
       "developer": "Anchorvale Residences Pte Ltd",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "600m (8 min)"
+      "mrt_distance": "600m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 31,
@@ -370,7 +400,8 @@
       "total_units": 651,
       "developer": "Qingjian Realty",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "980m (12 min)"
+      "mrt_distance": "980m (12 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 32,
@@ -382,7 +413,8 @@
       "total_units": 536,
       "developer": "Centrepoint Properties",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "100m (1 min)"
+      "mrt_distance": "100m (1 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 33,
@@ -394,7 +426,8 @@
       "total_units": 490,
       "developer": "NTUC Choice Homes",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.0km (13 min)"
+      "mrt_distance": "1.0km (13 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 34,
@@ -406,7 +439,8 @@
       "total_units": 548,
       "developer": "Anchorvale (JBE)",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.7km (21 min)"
+      "mrt_distance": "1.7km (21 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 35,
@@ -418,7 +452,8 @@
       "total_units": 882,
       "developer": "Sim Lian JV",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.2km (15 min)"
+      "mrt_distance": "1.2km (15 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 36,
@@ -430,7 +465,8 @@
       "total_units": 992,
       "developer": "Frasers / Far East",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "50m (1 min)"
+      "mrt_distance": "50m (1 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 37,
@@ -442,7 +478,8 @@
       "total_units": 618,
       "developer": "Wee Hur",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "300m (4 min)"
+      "mrt_distance": "300m (4 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 38,
@@ -454,7 +491,8 @@
       "total_units": 680,
       "developer": "Punggol Field EC",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.4km (18 min)"
+      "mrt_distance": "1.4km (18 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 39,
@@ -466,7 +504,8 @@
       "total_units": 590,
       "developer": "Qingjian Realty (Sengkang)",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.4km (18 min)"
+      "mrt_distance": "1.4km (18 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 40,
@@ -478,7 +517,8 @@
       "total_units": 504,
       "developer": "Sim Lian",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "800m (10 min)"
+      "mrt_distance": "800m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 41,
@@ -490,7 +530,8 @@
       "total_units": 1390,
       "developer": "Fernvale Development",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "2.3km (28 min)"
+      "mrt_distance": "2.3km (28 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 42,
@@ -502,7 +543,8 @@
       "total_units": 728,
       "developer": "Frasers Property",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "590m (7 min)"
+      "mrt_distance": "590m (7 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 43,
@@ -514,7 +556,8 @@
       "total_units": 512,
       "developer": "Qingjian Realty",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "610m (8 min)"
+      "mrt_distance": "610m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 44,
@@ -526,7 +569,8 @@
       "total_units": 610,
       "developer": "MCC Land",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.2km (15 min)"
+      "mrt_distance": "1.2km (15 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 45,
@@ -538,7 +582,8 @@
       "total_units": 378,
       "developer": "CDL",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.3km (16 min)"
+      "mrt_distance": "1.3km (16 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 46,
@@ -550,7 +595,8 @@
       "total_units": 504,
       "developer": "Qingjian Realty",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "700m (9 min)"
+      "mrt_distance": "700m (9 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 47,
@@ -562,7 +608,8 @@
       "total_units": 530,
       "developer": "FEO / KSH",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "900m (11 min)"
+      "mrt_distance": "900m (11 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 48,
@@ -574,7 +621,8 @@
       "total_units": 640,
       "developer": "Hoi Hup",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "800m (10 min)"
+      "mrt_distance": "800m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 49,
@@ -586,7 +634,8 @@
       "total_units": 747,
       "developer": "CDL",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.1km (14 min)"
+      "mrt_distance": "1.1km (14 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 50,
@@ -598,7 +647,8 @@
       "total_units": 508,
       "developer": "Hoi Hup / Sunway",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "700m (9 min)"
+      "mrt_distance": "700m (9 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 51,
@@ -610,7 +660,8 @@
       "total_units": 892,
       "developer": "Hong Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "430m (5 min)"
+      "mrt_distance": "430m (5 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 52,
@@ -622,7 +673,8 @@
       "total_units": 892,
       "developer": "Hong Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "500m (6 min)"
+      "mrt_distance": "500m (6 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 53,
@@ -634,7 +686,8 @@
       "total_units": 642,
       "developer": "Hong Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "520m (7 min)"
+      "mrt_distance": "520m (7 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 54,
@@ -646,7 +699,8 @@
       "total_units": 724,
       "developer": "CDL / Hong Leong",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "610m (8 min)"
+      "mrt_distance": "610m (8 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 55,
@@ -658,7 +712,8 @@
       "total_units": 495,
       "developer": "Hao Yuan Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.1km (14 min)"
+      "mrt_distance": "1.1km (14 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 56,
@@ -670,7 +725,8 @@
       "total_units": 376,
       "developer": "Hoi Hup Sunway",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.2km (15 min)"
+      "mrt_distance": "1.2km (15 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 57,
@@ -682,7 +738,8 @@
       "total_units": 679,
       "developer": "MCL Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.4km (17 min)"
+      "mrt_distance": "1.4km (17 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 58,
@@ -694,7 +751,8 @@
       "total_units": 472,
       "developer": "Precious Sand",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.3km (16 min)"
+      "mrt_distance": "1.3km (16 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 59,
@@ -706,7 +764,8 @@
       "total_units": 380,
       "developer": "Elitist Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.0km (13 min)"
+      "mrt_distance": "1.0km (13 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 60,
@@ -718,7 +777,8 @@
       "total_units": 416,
       "developer": "Huge Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.2km (15 min)"
+      "mrt_distance": "1.2km (15 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 61,
@@ -730,7 +790,8 @@
       "total_units": 388,
       "developer": "CES Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "960m (12 min)"
+      "mrt_distance": "960m (12 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 62,
@@ -742,7 +803,8 @@
       "total_units": 300,
       "developer": "Pidemco Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "520m (7 min)"
+      "mrt_distance": "520m (7 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 63,
@@ -754,7 +816,8 @@
       "total_units": 315,
       "developer": "Pasir Ris EC",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "820m (10 min)"
+      "mrt_distance": "820m (10 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 64,
@@ -766,7 +829,8 @@
       "total_units": 463,
       "developer": "Publique Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.4km (17 min)"
+      "mrt_distance": "1.4km (17 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 65,
@@ -778,7 +842,8 @@
       "total_units": 501,
       "developer": "Tripartite Developers",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.5km (19 min)"
+      "mrt_distance": "1.5km (19 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 66,
@@ -790,7 +855,8 @@
       "total_units": 482,
       "developer": "KBD Flora",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.6km (20 min)"
+      "mrt_distance": "1.6km (20 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 67,
@@ -802,7 +868,8 @@
       "total_units": 396,
       "developer": "Tripartite Developers",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.7km (21 min)"
+      "mrt_distance": "1.7km (21 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 68,
@@ -814,7 +881,8 @@
       "total_units": 429,
       "developer": "FCL Boon Lay",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.7km (21 min)"
+      "mrt_distance": "1.7km (21 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 69,
@@ -826,7 +894,8 @@
       "total_units": 362,
       "developer": "Loyang Valley",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "2.4km (30 min)"
+      "mrt_distance": "2.4km (30 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 70,
@@ -838,7 +907,8 @@
       "total_units": 63,
       "developer": "Sustained Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.0km (13 min)"
+      "mrt_distance": "1.0km (13 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 71,
@@ -850,7 +920,8 @@
       "total_units": 51,
       "developer": "Hong How Corporation",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.2km (15 min)"
+      "mrt_distance": "1.2km (15 min)",
+      "created_at": "2026-05-02 09:40:46"
     },
     {
       "id": 73,
@@ -862,7 +933,8 @@
       "total_units": 2203,
       "developer": "Capitaland / CDL",
       "mrt_station": "Tampines West MRT",
-      "mrt_distance": "400m (5 min)"
+      "mrt_distance": "400m (5 min)",
+      "created_at": "2026-05-04 05:37:45"
     },
     {
       "id": 74,
@@ -874,7 +946,8 @@
       "total_units": 394,
       "developer": "Evergreen Park Pte Ltd",
       "mrt_station": "CR7 Defu MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 09:20:59"
     },
     {
       "id": 75,
@@ -886,7 +959,8 @@
       "total_units": 1111,
       "developer": "City Developments Limited (CDL)",
       "mrt_station": "DT17 Downtown MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 09:31:09"
     },
     {
       "id": 76,
@@ -898,7 +972,8 @@
       "total_units": 700,
       "developer": "MCC Land / HY Realty",
       "mrt_station": "EW19 Queenstown MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 12:08:36"
     },
     {
       "id": 77,
@@ -910,7 +985,8 @@
       "total_units": 1327,
       "developer": "MCL Land (Brighton) Pte Ltd",
       "mrt_station": null,
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 12:17:40"
     },
     {
       "id": 78,
@@ -922,7 +998,8 @@
       "total_units": 546,
       "developer": "Wheelock Properties (Singapore) Limited",
       "mrt_station": "TE26 Marine Parade MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 12:20:53"
     },
     {
       "id": 79,
@@ -934,7 +1011,8 @@
       "total_units": 626,
       "developer": "MCC Land (Tampines) Pte Ltd",
       "mrt_station": "DT32 Tampines MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 12:24:40"
     },
     {
       "id": 80,
@@ -946,7 +1024,8 @@
       "total_units": 1129,
       "developer": "Keppel Group",
       "mrt_station": "CC28 Telok Blangah MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 12:30:01"
     },
     {
       "id": 81,
@@ -958,7 +1037,8 @@
       "total_units": 428,
       "developer": "Keppel Land Ltd",
       "mrt_station": "DT17 Downtown MRT Station",
-      "mrt_distance": null
+      "mrt_distance": null,
+      "created_at": "2026-05-04 12:44:10"
     },
     {
       "id": 82,
@@ -970,7 +1050,8 @@
       "total_units": 360,
       "developer": "FCL (Far East Organization)",
       "mrt_station": "Tanjong Pagar MRT / Shenton Way MRT",
-      "mrt_distance": "5 min"
+      "mrt_distance": "5 min",
+      "created_at": "2026-05-05 07:43:14"
     },
     {
       "id": 83,
@@ -982,7 +1063,8 @@
       "total_units": 221,
       "developer": "Far East Organization",
       "mrt_station": "Tanjong Pagar MRT",
-      "mrt_distance": "5 min"
+      "mrt_distance": "5 min",
+      "created_at": "2026-05-05 07:43:14"
     },
     {
       "id": 84,
@@ -994,7 +1076,8 @@
       "total_units": 510,
       "developer": "UIC Investments (UOL Group)",
       "mrt_station": "Shenton Way MRT / Tanjong Pagar MRT",
-      "mrt_distance": "3 min"
+      "mrt_distance": "3 min",
+      "created_at": "2026-05-05 07:43:14"
     },
     {
       "id": 85,
@@ -1006,7 +1089,8 @@
       "total_units": 168,
       "developer": "Far East Organization",
       "mrt_station": "Prince Edward MRT / Tanjong Pagar MRT",
-      "mrt_distance": "5 min"
+      "mrt_distance": "5 min",
+      "created_at": "2026-05-05 07:43:14"
     },
     {
       "id": 86,
@@ -1018,7 +1102,8 @@
       "total_units": 132,
       "developer": "Bukit Sembawang Estates",
       "mrt_station": "Tanjong Pagar MRT / Outram Park MRT",
-      "mrt_distance": "8 min"
+      "mrt_distance": "8 min",
+      "created_at": "2026-05-05 07:43:14"
     }
   ],
   "project_stats": [
@@ -1821,6 +1906,16 @@
       "current_avg_psf": 1980.4,
       "rental_yield": null,
       "updated_at": "2026-05-05 08:02:38"
+    },
+    {
+      "condo_id": 85,
+      "total_txns": 1,
+      "avg_annualized": -1.8,
+      "max_annualized": -1.8,
+      "min_annualized": -1.8,
+      "current_avg_psf": 1819,
+      "rental_yield": null,
+      "updated_at": "2026-05-05 08:06:56"
     }
   ],
   "transactions": [
@@ -24391,6 +24486,19 @@
       "floor_level": "#27-XX",
       "annualized_return": 0.6,
       "created_at": "2026-05-05 08:02:38"
+    },
+    {
+      "id": 1785,
+      "condo_id": 85,
+      "buy_date": "2021-08-05",
+      "sell_date": "2025-05-07",
+      "buy_price": 986194,
+      "sell_price": 920414,
+      "size_sqft": 506,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#40-XX",
+      "annualized_return": -1.8,
+      "created_at": "2026-05-05 08:06:56"
     }
   ]
 }
