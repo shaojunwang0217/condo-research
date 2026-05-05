@@ -1811,6 +1811,16 @@
       "current_avg_psf": 2185.6666666666665,
       "rental_yield": null,
       "updated_at": "2026-05-05 07:56:45"
+    },
+    {
+      "condo_id": 84,
+      "total_txns": 5,
+      "avg_annualized": -1.3,
+      "max_annualized": 1.4,
+      "min_annualized": -4.9,
+      "current_avg_psf": 1980.4,
+      "rental_yield": null,
+      "updated_at": "2026-05-05 08:02:38"
     }
   ],
   "transactions": [
@@ -24316,6 +24326,71 @@
       "floor_level": "#30-XX",
       "annualized_return": 3.3,
       "created_at": "2026-05-05 07:56:45"
+    },
+    {
+      "id": 1780,
+      "condo_id": 84,
+      "buy_date": "2022-02-07",
+      "sell_date": "2025-10-30",
+      "buy_price": 1020996,
+      "sell_price": 966012,
+      "size_sqft": 474,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#28-XX",
+      "annualized_return": -1.5,
+      "created_at": "2026-05-05 08:02:38"
+    },
+    {
+      "id": 1781,
+      "condo_id": 84,
+      "buy_date": "2021-03-29",
+      "sell_date": "2025-12-05",
+      "buy_price": 1201116,
+      "sell_price": 950844,
+      "size_sqft": 474,
+      "unit_type": "1 BEDROOM",
+      "floor_level": "#12-XX",
+      "annualized_return": -4.9,
+      "created_at": "2026-05-05 08:02:38"
+    },
+    {
+      "id": 1782,
+      "condo_id": 84,
+      "buy_date": "2021-01-11",
+      "sell_date": "2024-02-21",
+      "buy_price": 3622320,
+      "sell_price": 3390660,
+      "size_sqft": 1755,
+      "unit_type": "3 BEDROOM",
+      "floor_level": "#44-XX",
+      "annualized_return": -2.1,
+      "created_at": "2026-05-05 08:02:38"
+    },
+    {
+      "id": 1783,
+      "condo_id": 84,
+      "buy_date": "2021-12-16",
+      "sell_date": "2025-09-18",
+      "buy_price": 1920402,
+      "sell_price": 2020320,
+      "size_sqft": 1098,
+      "unit_type": "2 BEDROOM",
+      "floor_level": "#20-XX",
+      "annualized_return": 1.4,
+      "created_at": "2026-05-05 08:02:38"
+    },
+    {
+      "id": 1784,
+      "condo_id": 84,
+      "buy_date": "2021-06-29",
+      "sell_date": "2025-05-06",
+      "buy_price": 2150090,
+      "sell_price": 2200730,
+      "size_sqft": 1055,
+      "unit_type": "2 BEDROOM",
+      "floor_level": "#27-XX",
+      "annualized_return": 0.6,
+      "created_at": "2026-05-05 08:02:38"
     }
   ]
 }
