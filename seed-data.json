@@ -1119,32 +1119,6 @@
       "created_at": "2026-05-05 08:17:16"
     },
     {
-      "id": 92,
-      "name": "THE BROOKS I",
-      "district": "D23",
-      "area": "Hillview / Dairy Farm",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2015,
-      "total_units": 189,
-      "developer": "MCL Land",
-      "mrt_station": "Hillview MRT",
-      "mrt_distance": "8 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
-      "id": 93,
-      "name": "THE BROOKS II",
-      "district": "D23",
-      "area": "Hillview / Dairy Farm",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2017,
-      "total_units": 78,
-      "developer": "MCL Land",
-      "mrt_station": "Hillview MRT",
-      "mrt_distance": "8 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
       "id": 94,
       "name": "KOOLA",
       "district": "D23",
