@@ -10,8 +10,7 @@
       "total_units": 714,
       "developer": "UOL Group",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "700m (9 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "700m (9 min)"
     },
     {
       "id": 2,
@@ -23,8 +22,7 @@
       "total_units": 152,
       "developer": "UOL Group",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "750m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "750m (10 min)"
     },
     {
       "id": 3,
@@ -36,8 +34,7 @@
       "total_units": 306,
       "developer": "City Developments",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "650m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "650m (8 min)"
     },
     {
       "id": 4,
@@ -49,8 +46,7 @@
       "total_units": 396,
       "developer": "Wing Tai Holdings",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "550m (7 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "550m (7 min)"
     },
     {
       "id": 5,
@@ -62,8 +58,7 @@
       "total_units": 546,
       "developer": "Wing Tai / UOL / Kheng Leong",
       "mrt_station": "Boon Keng MRT",
-      "mrt_distance": "600m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "600m (8 min)"
     },
     {
       "id": 6,
@@ -75,8 +70,7 @@
       "total_units": 213,
       "developer": "Frasers",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "800m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "800m (10 min)"
     },
     {
       "id": 7,
@@ -88,8 +82,7 @@
       "total_units": 273,
       "developer": "Times Development (SPH)",
       "mrt_station": "Caldecott MRT",
-      "mrt_distance": "500m (6 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "500m (6 min)"
     },
     {
       "id": 8,
@@ -101,8 +94,7 @@
       "total_units": 106,
       "developer": "Allgreen",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "700m (9 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "700m (9 min)"
     },
     {
       "id": 9,
@@ -114,8 +106,7 @@
       "total_units": 115,
       "developer": "Wing Tai",
       "mrt_station": "Toa Payoh MRT",
-      "mrt_distance": "450m (6 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "450m (6 min)"
     },
     {
       "id": 10,
@@ -127,8 +118,7 @@
       "total_units": 394,
       "developer": "EL Development",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "600m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "600m (8 min)"
     },
     {
       "id": 11,
@@ -140,8 +130,7 @@
       "total_units": 521,
       "developer": "UOL / Kheng Leong",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "300m (4 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "300m (4 min)"
     },
     {
       "id": 12,
@@ -153,8 +142,7 @@
       "total_units": 716,
       "developer": "Allgreen",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "800m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "800m (10 min)"
     },
     {
       "id": 13,
@@ -166,8 +154,7 @@
       "total_units": 573,
       "developer": "MCL Land",
       "mrt_station": "Ranggung LRT",
-      "mrt_distance": "300m (4 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "300m (4 min)"
     },
     {
       "id": 14,
@@ -179,8 +166,7 @@
       "total_units": 625,
       "developer": "Frasers",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "750m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "750m (10 min)"
     },
     {
       "id": 15,
@@ -192,8 +178,7 @@
       "total_units": 1145,
       "developer": "MCL Land",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "900m (12 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "900m (12 min)"
     },
     {
       "id": 16,
@@ -205,8 +190,7 @@
       "total_units": 928,
       "developer": "Frasers / Far East",
       "mrt_station": "Ranggung LRT",
-      "mrt_distance": "400m (5 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "400m (5 min)"
     },
     {
       "id": 17,
@@ -218,8 +202,7 @@
       "total_units": 1157,
       "developer": "Kingsford",
       "mrt_station": "Ranggung LRT",
-      "mrt_distance": "500m (7 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "500m (7 min)"
     },
     {
       "id": 18,
@@ -231,8 +214,7 @@
       "total_units": 999,
       "developer": "Oxley / Lian Beng",
       "mrt_station": "Kovan MRT",
-      "mrt_distance": "900m (12 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "900m (12 min)"
     },
     {
       "id": 19,
@@ -244,8 +226,7 @@
       "total_units": 514,
       "developer": "Tampines EC Pte Ltd",
       "mrt_station": "Tampines MRT",
-      "mrt_distance": "940m (11 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "940m (11 min)"
     },
     {
       "id": 20,
@@ -257,8 +238,7 @@
       "total_units": 299,
       "developer": "Wing Tai",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "800m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "800m (10 min)"
     },
     {
       "id": 21,
@@ -270,8 +250,7 @@
       "total_units": 376,
       "developer": "UOL",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "700m (9 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "700m (9 min)"
     },
     {
       "id": 22,
@@ -283,8 +262,7 @@
       "total_units": 470,
       "developer": "EL Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "850m (11 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "850m (11 min)"
     },
     {
       "id": 23,
@@ -296,8 +274,7 @@
       "total_units": 435,
       "developer": "City Developments",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "900m (12 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "900m (12 min)"
     },
     {
       "id": 24,
@@ -309,8 +286,7 @@
       "total_units": 345,
       "developer": "QingJian",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "600m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "600m (8 min)"
     },
     {
       "id": 25,
@@ -322,8 +298,7 @@
       "total_units": 420,
       "developer": "Far East",
       "mrt_station": "Tampines MRT",
-      "mrt_distance": "1000m (13 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1000m (13 min)"
     },
     {
       "id": 26,
@@ -335,8 +310,7 @@
       "total_units": 267,
       "developer": "Bukit Sembawang",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "750m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "750m (10 min)"
     },
     {
       "id": 27,
@@ -348,8 +322,7 @@
       "total_units": 348,
       "developer": "Frasers / Far East",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "500m (7 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "500m (7 min)"
     },
     {
       "id": 28,
@@ -361,8 +334,7 @@
       "total_units": 622,
       "developer": "Keppel Land Realty",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "300m (4 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "300m (4 min)"
     },
     {
       "id": 29,
@@ -374,8 +346,7 @@
       "total_units": 810,
       "developer": "EL Development",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "170m (2 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "170m (2 min)"
     },
     {
       "id": 30,
@@ -387,8 +358,7 @@
       "total_units": 517,
       "developer": "Anchorvale Residences Pte Ltd",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "600m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "600m (8 min)"
     },
     {
       "id": 31,
@@ -400,8 +370,7 @@
       "total_units": 651,
       "developer": "Qingjian Realty",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "980m (12 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "980m (12 min)"
     },
     {
       "id": 32,
@@ -413,8 +382,7 @@
       "total_units": 536,
       "developer": "Centrepoint Properties",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "100m (1 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "100m (1 min)"
     },
     {
       "id": 33,
@@ -426,8 +394,7 @@
       "total_units": 490,
       "developer": "NTUC Choice Homes",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.0km (13 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.0km (13 min)"
     },
     {
       "id": 34,
@@ -439,8 +406,7 @@
       "total_units": 548,
       "developer": "Anchorvale (JBE)",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.7km (21 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.7km (21 min)"
     },
     {
       "id": 35,
@@ -452,8 +418,7 @@
       "total_units": 882,
       "developer": "Sim Lian JV",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.2km (15 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.2km (15 min)"
     },
     {
       "id": 36,
@@ -465,8 +430,7 @@
       "total_units": 992,
       "developer": "Frasers / Far East",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "50m (1 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "50m (1 min)"
     },
     {
       "id": 37,
@@ -478,8 +442,7 @@
       "total_units": 618,
       "developer": "Wee Hur",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "300m (4 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "300m (4 min)"
     },
     {
       "id": 38,
@@ -491,8 +454,7 @@
       "total_units": 680,
       "developer": "Punggol Field EC",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.4km (18 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.4km (18 min)"
     },
     {
       "id": 39,
@@ -504,8 +466,7 @@
       "total_units": 590,
       "developer": "Qingjian Realty (Sengkang)",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "1.4km (18 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.4km (18 min)"
     },
     {
       "id": 40,
@@ -517,8 +478,7 @@
       "total_units": 504,
       "developer": "Sim Lian",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "800m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "800m (10 min)"
     },
     {
       "id": 41,
@@ -530,8 +490,7 @@
       "total_units": 1390,
       "developer": "Fernvale Development",
       "mrt_station": "Sengkang MRT",
-      "mrt_distance": "2.3km (28 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "2.3km (28 min)"
     },
     {
       "id": 42,
@@ -543,8 +502,7 @@
       "total_units": 728,
       "developer": "Frasers Property",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "590m (7 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "590m (7 min)"
     },
     {
       "id": 43,
@@ -556,8 +514,7 @@
       "total_units": 512,
       "developer": "Qingjian Realty",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "610m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "610m (8 min)"
     },
     {
       "id": 44,
@@ -569,8 +526,7 @@
       "total_units": 610,
       "developer": "MCC Land",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.2km (15 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.2km (15 min)"
     },
     {
       "id": 45,
@@ -582,8 +538,7 @@
       "total_units": 378,
       "developer": "CDL",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.3km (16 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.3km (16 min)"
     },
     {
       "id": 46,
@@ -595,8 +550,7 @@
       "total_units": 504,
       "developer": "Qingjian Realty",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "700m (9 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "700m (9 min)"
     },
     {
       "id": 47,
@@ -608,8 +562,7 @@
       "total_units": 530,
       "developer": "FEO / KSH",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "900m (11 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "900m (11 min)"
     },
     {
       "id": 48,
@@ -621,8 +574,7 @@
       "total_units": 640,
       "developer": "Hoi Hup",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "800m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "800m (10 min)"
     },
     {
       "id": 49,
@@ -634,8 +586,7 @@
       "total_units": 747,
       "developer": "CDL",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "1.1km (14 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.1km (14 min)"
     },
     {
       "id": 50,
@@ -647,8 +598,7 @@
       "total_units": 508,
       "developer": "Hoi Hup / Sunway",
       "mrt_station": "Punggol MRT",
-      "mrt_distance": "700m (9 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "700m (9 min)"
     },
     {
       "id": 51,
@@ -660,8 +610,7 @@
       "total_units": 892,
       "developer": "Hong Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "430m (5 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "430m (5 min)"
     },
     {
       "id": 52,
@@ -673,8 +622,7 @@
       "total_units": 892,
       "developer": "Hong Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "500m (6 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "500m (6 min)"
     },
     {
       "id": 53,
@@ -686,8 +634,7 @@
       "total_units": 642,
       "developer": "Hong Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "520m (7 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "520m (7 min)"
     },
     {
       "id": 54,
@@ -699,8 +646,7 @@
       "total_units": 724,
       "developer": "CDL / Hong Leong",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "610m (8 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "610m (8 min)"
     },
     {
       "id": 55,
@@ -712,8 +658,7 @@
       "total_units": 495,
       "developer": "Hao Yuan Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.1km (14 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.1km (14 min)"
     },
     {
       "id": 56,
@@ -725,8 +670,7 @@
       "total_units": 376,
       "developer": "Hoi Hup Sunway",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.2km (15 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.2km (15 min)"
     },
     {
       "id": 57,
@@ -738,8 +682,7 @@
       "total_units": 679,
       "developer": "MCL Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.4km (17 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.4km (17 min)"
     },
     {
       "id": 58,
@@ -751,8 +694,7 @@
       "total_units": 472,
       "developer": "Precious Sand",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.3km (16 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.3km (16 min)"
     },
     {
       "id": 59,
@@ -764,8 +706,7 @@
       "total_units": 380,
       "developer": "Elitist Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.0km (13 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.0km (13 min)"
     },
     {
       "id": 60,
@@ -777,8 +718,7 @@
       "total_units": 416,
       "developer": "Huge Development",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.2km (15 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.2km (15 min)"
     },
     {
       "id": 61,
@@ -790,8 +730,7 @@
       "total_units": 388,
       "developer": "CES Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "960m (12 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "960m (12 min)"
     },
     {
       "id": 62,
@@ -803,8 +742,7 @@
       "total_units": 300,
       "developer": "Pidemco Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "520m (7 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "520m (7 min)"
     },
     {
       "id": 63,
@@ -816,8 +754,7 @@
       "total_units": 315,
       "developer": "Pasir Ris EC",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "820m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "820m (10 min)"
     },
     {
       "id": 64,
@@ -829,8 +766,7 @@
       "total_units": 463,
       "developer": "Publique Realty",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.4km (17 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.4km (17 min)"
     },
     {
       "id": 65,
@@ -842,8 +778,7 @@
       "total_units": 501,
       "developer": "Tripartite Developers",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.5km (19 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.5km (19 min)"
     },
     {
       "id": 66,
@@ -855,8 +790,7 @@
       "total_units": 482,
       "developer": "KBD Flora",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.6km (20 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.6km (20 min)"
     },
     {
       "id": 67,
@@ -868,8 +802,7 @@
       "total_units": 396,
       "developer": "Tripartite Developers",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.7km (21 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.7km (21 min)"
     },
     {
       "id": 68,
@@ -881,8 +814,7 @@
       "total_units": 429,
       "developer": "FCL Boon Lay",
       "mrt_station": "Upper Changi MRT",
-      "mrt_distance": "1.7km (21 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.7km (21 min)"
     },
     {
       "id": 69,
@@ -894,8 +826,7 @@
       "total_units": 362,
       "developer": "Loyang Valley",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "2.4km (30 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "2.4km (30 min)"
     },
     {
       "id": 70,
@@ -907,8 +838,7 @@
       "total_units": 63,
       "developer": "Sustained Land",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.0km (13 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.0km (13 min)"
     },
     {
       "id": 71,
@@ -920,8 +850,7 @@
       "total_units": 51,
       "developer": "Hong How Corporation",
       "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "1.2km (15 min)",
-      "created_at": "2026-05-02 09:40:46"
+      "mrt_distance": "1.2km (15 min)"
     },
     {
       "id": 73,
@@ -933,21 +862,19 @@
       "total_units": 2203,
       "developer": "Capitaland / CDL",
       "mrt_station": "Tampines West MRT",
-      "mrt_distance": "400m (5 min)",
-      "created_at": "2026-05-04 05:37:45"
+      "mrt_distance": "400m (5 min)"
     },
     {
       "id": 74,
       "name": "EVERGREEN PARK",
-      "district": "D19",
+      "district": "19.0",
       "area": "HOUGANG",
       "tenure": "99-year Leasehold",
       "year_completed": 1999,
       "total_units": 394,
       "developer": "Evergreen Park Pte Ltd",
       "mrt_station": "CR7 Defu MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 09:20:59"
+      "mrt_distance": null
     },
     {
       "id": 75,
@@ -959,8 +886,7 @@
       "total_units": 1111,
       "developer": "City Developments Limited (CDL)",
       "mrt_station": "DT17 Downtown MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 09:31:09"
+      "mrt_distance": null
     },
     {
       "id": 76,
@@ -972,8 +898,7 @@
       "total_units": 700,
       "developer": "MCC Land / HY Realty",
       "mrt_station": "EW19 Queenstown MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:08:36"
+      "mrt_distance": null
     },
     {
       "id": 77,
@@ -985,8 +910,7 @@
       "total_units": 1327,
       "developer": "MCL Land (Brighton) Pte Ltd",
       "mrt_station": null,
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:17:40"
+      "mrt_distance": null
     },
     {
       "id": 78,
@@ -998,8 +922,7 @@
       "total_units": 546,
       "developer": "Wheelock Properties (Singapore) Limited",
       "mrt_station": "TE26 Marine Parade MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:20:53"
+      "mrt_distance": null
     },
     {
       "id": 79,
@@ -1011,8 +934,7 @@
       "total_units": 626,
       "developer": "MCC Land (Tampines) Pte Ltd",
       "mrt_station": "DT32 Tampines MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:24:40"
+      "mrt_distance": null
     },
     {
       "id": 80,
@@ -1024,8 +946,7 @@
       "total_units": 1129,
       "developer": "Keppel Group",
       "mrt_station": "CC28 Telok Blangah MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:30:01"
+      "mrt_distance": null
     },
     {
       "id": 81,
@@ -1037,73 +958,67 @@
       "total_units": 428,
       "developer": "Keppel Land Ltd",
       "mrt_station": "DT17 Downtown MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:44:10"
+      "mrt_distance": null
     },
     {
       "id": 82,
-      "name": "MARINA ONE RESIDENCES",
-      "district": "D01",
-      "area": "MARINA BAY",
+      "name": "SKYSUITES @ ANSON",
+      "district": "D02",
+      "area": "Chinatown / Tanjong Pagar",
       "tenure": "99-year Leasehold",
-      "year_completed": 2017,
-      "total_units": 1042,
-      "developer": "M+S Pte Ltd (Khazanah / Temasek)",
-      "mrt_station": "NS27 Marina Bay MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:52:08"
+      "year_completed": 2015,
+      "total_units": 360,
+      "developer": "FCL (Far East Organization)",
+      "mrt_station": "Tanjong Pagar MRT / Shenton Way MRT",
+      "mrt_distance": "5 min"
     },
     {
       "id": 83,
-      "name": "V ON SHENTON",
-      "district": "D01",
-      "area": "SHENTON WAY",
+      "name": "ALTEZ",
+      "district": "D02",
+      "area": "Chinatown / Tanjong Pagar",
       "tenure": "99-year Leasehold",
       "year_completed": 2017,
-      "total_units": 510,
-      "developer": "UIC Investments & Properties Pte Ltd",
-      "mrt_station": "TE19 Shenton Way MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 12:55:59"
+      "total_units": 221,
+      "developer": "Far East Organization",
+      "mrt_station": "Tanjong Pagar MRT",
+      "mrt_distance": "5 min"
     },
     {
       "id": 84,
-      "name": "D'LEEDON",
-      "district": "D10",
-      "area": "FARRER",
+      "name": "V ON SHENTON",
+      "district": "D02",
+      "area": "Chinatown / Tanjong Pagar",
       "tenure": "99-year Leasehold",
-      "year_completed": 2014,
-      "total_units": 1715,
-      "developer": "CapitaLand",
-      "mrt_station": "CC20 Farrer Road MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 13:15:55"
+      "year_completed": 2017,
+      "total_units": 510,
+      "developer": "UIC Investments (UOL Group)",
+      "mrt_station": "Shenton Way MRT / Tanjong Pagar MRT",
+      "mrt_distance": "3 min"
     },
     {
       "id": 85,
-      "name": "PARVIS",
-      "district": "D10",
-      "area": "HOLLAND ROAD",
+      "name": "LUMIERE",
+      "district": "D02",
+      "area": "Chinatown / Tanjong Pagar",
       "tenure": "99-year Leasehold",
-      "year_completed": 2012,
-      "total_units": 248,
-      "developer": "Calne Pte Ltd (Hoi Hup / Sunway)",
-      "mrt_station": "CC21 Holland Village MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 13:18:53"
+      "year_completed": 2010,
+      "total_units": 168,
+      "developer": "Far East Organization",
+      "mrt_station": "Prince Edward MRT / Tanjong Pagar MRT",
+      "mrt_distance": "5 min"
     },
     {
       "id": 86,
-      "name": "LEEDON RESIDENCE",
-      "district": "D10",
-      "area": "FARRER",
+      "name": "SPOTTISWOODE 18",
+      "district": "D02",
+      "area": "Spottiswoode Park / Tanjong Pagar",
       "tenure": "99-year Leasehold",
-      "year_completed": 2015,
-      "total_units": 381,
-      "developer": "GuocoLand Group",
-      "mrt_station": "CC21 Holland Village MRT Station",
-      "mrt_distance": null,
-      "created_at": "2026-05-04 13:21:28"
+      "year_completed": 2014,
+      "total_units": 132,
+      "developer": "Bukit Sembawang Estates",
+      "mrt_station": "Tanjong Pagar MRT / Outram Park MRT",
+      "mrt_distance": "8 min"
     }
   ],
   "project_stats": [
@@ -1868,16 +1783,6 @@
       "updated_at": "2026-05-04 12:24:40"
     },
     {
-      "condo_id": 80,
-      "total_txns": 20,
-      "avg_annualized": 2.343835700577621,
-      "max_annualized": 7.421937421669056,
-      "min_annualized": -2.073646611234592,
-      "current_avg_psf": 1712.55,
-      "rental_yield": null,
-      "updated_at": "2026-05-04 12:48:14"
-    },
-    {
       "condo_id": 81,
       "total_txns": 6,
       "avg_annualized": -4.484201092250173,
@@ -1885,57 +1790,7 @@
       "min_annualized": -14.340240458545905,
       "current_avg_psf": 2316.6666666666665,
       "rental_yield": null,
-      "updated_at": "2026-05-04 12:48:05"
-    },
-    {
-      "condo_id": 82,
-      "total_txns": 22,
-      "avg_annualized": -2.6672077618800505,
-      "max_annualized": 3.8634018216744836,
-      "min_annualized": -7.015303968096531,
-      "current_avg_psf": 2108.590909090909,
-      "rental_yield": null,
-      "updated_at": "2026-05-04 12:52:08"
-    },
-    {
-      "condo_id": 83,
-      "total_txns": 5,
-      "avg_annualized": -1.290966510792484,
-      "max_annualized": 1.3629128119078349,
-      "min_annualized": -4.795515488267155,
-      "current_avg_psf": 1980.4,
-      "rental_yield": null,
-      "updated_at": "2026-05-04 12:55:59"
-    },
-    {
-      "condo_id": 84,
-      "total_txns": 30,
-      "avg_annualized": 4.980118649861456,
-      "max_annualized": 10.951044914726626,
-      "min_annualized": -2.633572914040294,
-      "current_avg_psf": 2002.9333333333334,
-      "rental_yield": null,
-      "updated_at": "2026-05-04 13:15:55"
-    },
-    {
-      "condo_id": 85,
-      "total_txns": 3,
-      "avg_annualized": 6.234957351469313,
-      "max_annualized": 9.149434647624233,
-      "min_annualized": 2.292506533875316,
-      "current_avg_psf": 2226,
-      "rental_yield": null,
-      "updated_at": "2026-05-04 13:18:53"
-    },
-    {
-      "condo_id": 86,
-      "total_txns": 2,
-      "avg_annualized": 4.827621082961686,
-      "max_annualized": 5.39683489653584,
-      "min_annualized": 4.258407269387532,
-      "current_avg_psf": 2827.5,
-      "rental_yield": null,
-      "updated_at": "2026-05-04 13:21:28"
+      "updated_at": "2026-05-04 12:45:35"
     }
   ],
   "transactions": [
@@ -24170,267 +24025,7 @@
       "created_at": "2026-05-04 12:24:40"
     },
     {
-      "id": 1801,
-      "condo_id": 80,
-      "buy_date": "2020-10-15",
-      "sell_date": "2025-04-16",
-      "buy_price": 3042810,
-      "sell_price": 2769000,
-      "size_sqft": 1625,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -2.073646611234592,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1802,
-      "condo_id": 80,
-      "buy_date": "2020-01-23",
-      "sell_date": "2024-11-15",
-      "buy_price": 2624852,
-      "sell_price": 2434865,
-      "size_sqft": 1733,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -1.5424603210546728,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1803,
-      "condo_id": 80,
-      "buy_date": "2022-06-07",
-      "sell_date": "2025-06-23",
-      "buy_price": 1819310,
-      "sell_price": 2099310,
-      "size_sqft": 1270,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.887392572879157,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1804,
-      "condo_id": 80,
-      "buy_date": "2022-05-13",
-      "sell_date": "2025-12-11",
-      "buy_price": 1999240,
-      "sell_price": 2109240,
-      "size_sqft": 1302,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 1.5059407069210717,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1805,
-      "condo_id": 80,
-      "buy_date": "2022-04-29",
-      "sell_date": "2025-09-15",
-      "buy_price": 5850779,
-      "sell_price": 6400779,
-      "size_sqft": 3993,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.6644856547680895,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1806,
-      "condo_id": 80,
-      "buy_date": "2022-04-18",
-      "sell_date": "2026-04-07",
-      "buy_price": 1804756,
-      "sell_price": 1817256,
-      "size_sqft": 1119,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 0.1727056767017343,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1807,
-      "condo_id": 80,
-      "buy_date": "2021-10-27",
-      "sell_date": "2025-04-08",
-      "buy_price": 1858918,
-      "sell_price": 1926918,
-      "size_sqft": 1119,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 1.0317790016925343,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1808,
-      "condo_id": 80,
-      "buy_date": "2021-10-01",
-      "sell_date": "2025-03-18",
-      "buy_price": 1399468,
-      "sell_price": 1539468,
-      "size_sqft": 861,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.8298790372663696,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1810,
-      "condo_id": 80,
-      "buy_date": "2021-08-18",
-      "sell_date": "2025-10-28",
-      "buy_price": 1779707,
-      "sell_price": 1849707,
-      "size_sqft": 1119,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 0.9301836659829865,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1811,
-      "condo_id": 80,
-      "buy_date": "2021-06-23",
-      "sell_date": "2024-10-11",
-      "buy_price": 1780872,
-      "sell_price": 2260872,
-      "size_sqft": 1163,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 7.421937421669056,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1812,
-      "condo_id": 80,
-      "buy_date": "2021-06-04",
-      "sell_date": "2025-05-29",
-      "buy_price": 1480520,
-      "sell_price": 1730520,
-      "size_sqft": 1012,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.064121928039577,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1813,
-      "condo_id": 80,
-      "buy_date": "2021-04-28",
-      "sell_date": "2024-05-13",
-      "buy_price": 2129844,
-      "sell_price": 2549844,
-      "size_sqft": 1507,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 6.011035226295269,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1814,
-      "condo_id": 80,
-      "buy_date": "2021-03-19",
-      "sell_date": "2024-12-23",
-      "buy_price": 1950754,
-      "sell_price": 2000754,
-      "size_sqft": 1206,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 0.6771663398208005,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1815,
-      "condo_id": 80,
-      "buy_date": "2021-03-05",
-      "sell_date": "2025-03-20",
-      "buy_price": 2300280,
-      "sell_price": 2700280,
-      "size_sqft": 1292,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.089524375468878,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1816,
-      "condo_id": 80,
-      "buy_date": "2020-11-11",
-      "sell_date": "2025-08-08",
-      "buy_price": 2749125,
-      "sell_price": 3089125,
-      "size_sqft": 1625,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.485225749303943,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1817,
-      "condo_id": 80,
-      "buy_date": "2020-11-11",
-      "sell_date": "2024-07-30",
-      "buy_price": 1599707,
-      "sell_price": 1849707,
-      "size_sqft": 1119,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.039645144389037,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1818,
-      "condo_id": 80,
-      "buy_date": "2020-10-01",
-      "sell_date": "2025-07-03",
-      "buy_price": 2007928,
-      "sell_price": 2279928,
-      "size_sqft": 1324,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.7106239869142623,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1819,
-      "condo_id": 80,
-      "buy_date": "2020-09-03",
-      "sell_date": "2024-09-26",
-      "buy_price": 1550045,
-      "sell_price": 1708045,
-      "size_sqft": 1055,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.4563194150955647,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1820,
-      "condo_id": 80,
-      "buy_date": "2020-08-04",
-      "sell_date": "2025-01-16",
-      "buy_price": 1678860,
-      "sell_price": 1866860,
-      "size_sqft": 1076,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.432345522004309,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1821,
-      "condo_id": 80,
-      "buy_date": "2020-02-04",
-      "sell_date": "2024-08-13",
-      "buy_price": 5378812,
-      "sell_price": 5398812,
-      "size_sqft": 3078,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 0.0825095186290481,
-      "created_at": "2026-05-04 12:48:05"
-    },
-    {
-      "id": 1822,
+      "id": 1751,
       "condo_id": 81,
       "buy_date": "2023-10-18",
       "sell_date": "2024-12-20",
@@ -24440,10 +24035,10 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": -7.502545675241013,
-      "created_at": "2026-05-04 12:48:05"
+      "created_at": "2026-05-04 12:45:35"
     },
     {
-      "id": 1823,
+      "id": 1752,
       "condo_id": 81,
       "buy_date": "2022-06-06",
       "sell_date": "2025-08-15",
@@ -24453,10 +24048,10 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": -14.340240458545905,
-      "created_at": "2026-05-04 12:48:05"
+      "created_at": "2026-05-04 12:45:35"
     },
     {
-      "id": 1824,
+      "id": 1753,
       "condo_id": 81,
       "buy_date": "2021-07-08",
       "sell_date": "2022-06-20",
@@ -24466,10 +24061,10 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": -10.865133502341951,
-      "created_at": "2026-05-04 12:48:05"
+      "created_at": "2026-05-04 12:45:35"
     },
     {
-      "id": 1825,
+      "id": 1754,
       "condo_id": 81,
       "buy_date": "2021-02-09",
       "sell_date": "2026-01-26",
@@ -24479,10 +24074,10 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": 1.7777286298592987,
-      "created_at": "2026-05-04 12:48:05"
+      "created_at": "2026-05-04 12:45:35"
     },
     {
-      "id": 1826,
+      "id": 1755,
       "condo_id": 81,
       "buy_date": "2020-10-29",
       "sell_date": "2026-03-27",
@@ -24492,10 +24087,10 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": 0.15997659652300378,
-      "created_at": "2026-05-04 12:48:05"
+      "created_at": "2026-05-04 12:45:35"
     },
     {
-      "id": 1827,
+      "id": 1756,
       "condo_id": 81,
       "buy_date": "2020-01-08",
       "sell_date": "2023-07-17",
@@ -24505,813 +24100,176 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": 3.865007856245528,
-      "created_at": "2026-05-04 12:48:05"
+      "created_at": "2026-05-04 12:45:35"
     },
     {
-      "id": 1828,
-      "condo_id": 82,
-      "buy_date": "2021-09-20",
-      "sell_date": "2023-03-16",
-      "buy_price": 6361620,
-      "sell_price": 5799620,
-      "size_sqft": 2045,
+      "id": 1757,
+      "condo_id": 80,
+      "buy_date": "2020-10-15",
+      "sell_date": "2025-04-16",
+      "buy_price": 3042810,
+      "sell_price": 2769000,
+      "size_sqft": 1625,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": -5.979791472528307,
-      "created_at": "2026-05-04 12:52:08"
+      "annualized_return": -2.073646611234592,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1829,
-      "condo_id": 82,
-      "buy_date": "2021-08-05",
-      "sell_date": "2026-03-30",
-      "buy_price": 1674880,
-      "sell_price": 1200060,
-      "size_sqft": 678,
+      "id": 1758,
+      "condo_id": 80,
+      "buy_date": "2020-01-23",
+      "sell_date": "2024-11-15",
+      "buy_price": 2624852,
+      "sell_price": 2434865,
+      "size_sqft": 1733,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": -7.015303968096531,
-      "created_at": "2026-05-04 12:52:08"
+      "annualized_return": -1.5424603210546728,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1830,
-      "condo_id": 82,
-      "buy_date": "2021-05-25",
-      "sell_date": "2025-11-21",
-      "buy_price": 3459990,
-      "sell_price": 3219453,
-      "size_sqft": 1593,
+      "id": 1759,
+      "condo_id": 80,
+      "buy_date": "2022-06-07",
+      "sell_date": "2025-06-23",
+      "buy_price": 1819310,
+      "sell_price": 2099310,
+      "size_sqft": 1270,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": -1.5884539600915737,
-      "created_at": "2026-05-04 12:52:08"
+      "annualized_return": 4.887392572879157,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1831,
-      "condo_id": 82,
-      "buy_date": "2021-01-18",
-      "sell_date": "2022-06-29",
-      "buy_price": 4423682,
-      "sell_price": 4035682,
-      "size_sqft": 1582,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -6.274316756265518,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1832,
-      "condo_id": 82,
-      "buy_date": "2020-11-27",
-      "sell_date": "2024-09-25",
-      "buy_price": 1811007,
-      "sell_price": 1548921,
-      "size_sqft": 753,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -3.995997276161811,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1833,
-      "condo_id": 82,
-      "buy_date": "2020-10-14",
-      "sell_date": "2025-08-08",
-      "buy_price": 1776580,
-      "sell_price": 1450025,
-      "size_sqft": 775,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -4.115191678543928,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1834,
-      "condo_id": 82,
-      "buy_date": "2020-08-28",
-      "sell_date": "2025-03-11",
-      "buy_price": 3852500,
-      "sell_price": 3429776,
-      "size_sqft": 1582,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -2.5039860452942486,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1835,
-      "condo_id": 82,
-      "buy_date": "2020-08-14",
-      "sell_date": "2025-05-09",
-      "buy_price": 2536604,
-      "sell_price": 2200224,
-      "size_sqft": 1066,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -2.9506863439354714,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1836,
-      "condo_id": 82,
-      "buy_date": "2020-08-14",
-      "sell_date": "2026-02-03",
-      "buy_price": 3081089,
-      "sell_price": 2271339,
-      "size_sqft": 1163,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -5.393010966886913,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1837,
-      "condo_id": 82,
-      "buy_date": "2020-06-18",
-      "sell_date": "2026-02-10",
-      "buy_price": 2906082,
-      "sell_price": 2400432,
-      "size_sqft": 1163,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -3.317096545832876,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1838,
-      "condo_id": 82,
-      "buy_date": "2020-05-08",
-      "sell_date": "2025-02-21",
-      "buy_price": 1419866,
-      "sell_price": 1387866,
-      "size_sqft": 678,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -0.4787489647468446,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1839,
-      "condo_id": 82,
-      "buy_date": "2020-04-22",
-      "sell_date": "2023-07-13",
-      "buy_price": 1642596,
-      "sell_price": 1620483,
-      "size_sqft": 743,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -0.41616743480166196,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1840,
-      "condo_id": 82,
-      "buy_date": "2020-03-25",
-      "sell_date": "2024-12-09",
-      "buy_price": 1665882,
-      "sell_price": 1518801,
-      "size_sqft": 753,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -1.927156782339623,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1841,
-      "condo_id": 82,
-      "buy_date": "2020-03-24",
-      "sell_date": "2025-11-13",
-      "buy_price": 2881513,
-      "sell_price": 2319653,
-      "size_sqft": 1141,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -3.755282710365593,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1842,
-      "condo_id": 82,
-      "buy_date": "2020-03-09",
-      "sell_date": "2025-12-02",
-      "buy_price": 1659999,
-      "sell_price": 1342601,
-      "size_sqft": 743,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -3.6233060731647226,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1843,
-      "condo_id": 82,
-      "buy_date": "2020-02-10",
-      "sell_date": "2025-12-16",
-      "buy_price": 1784438,
-      "sell_price": 1459240,
-      "size_sqft": 764,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -3.3901353610096163,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1844,
-      "condo_id": 82,
-      "buy_date": "2020-02-07",
-      "sell_date": "2025-09-26",
-      "buy_price": 3832652,
-      "sell_price": 3379152,
-      "size_sqft": 1582,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -2.2302558308244125,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1845,
-      "condo_id": 82,
-      "buy_date": "2020-01-13",
-      "sell_date": "2026-01-21",
-      "buy_price": 1699654,
-      "sell_price": 1338834,
-      "size_sqft": 753,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -3.899045321119776,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1846,
-      "condo_id": 82,
-      "buy_date": "2020-01-08",
-      "sell_date": "2026-01-12",
-      "buy_price": 2428044,
-      "sell_price": 2250405,
-      "size_sqft": 1163,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -1.2582798680871532,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1847,
-      "condo_id": 82,
-      "buy_date": "2020-09-03",
-      "sell_date": "2022-04-19",
-      "buy_price": 1797806,
-      "sell_price": 1798164,
-      "size_sqft": 753,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 0.012576271849495946,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1848,
-      "condo_id": 82,
-      "buy_date": "2020-07-17",
-      "sell_date": "2022-07-22",
-      "buy_price": 2458043,
-      "sell_price": 2651640,
-      "size_sqft": 1163,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 3.8634018216744836,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1849,
-      "condo_id": 82,
-      "buy_date": "2020-06-26",
-      "sell_date": "2025-01-24",
-      "buy_price": 1769186,
-      "sell_price": 1899066,
-      "size_sqft": 753,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 1.5576645052114868,
-      "created_at": "2026-05-04 12:52:08"
-    },
-    {
-      "id": 1850,
-      "condo_id": 83,
-      "buy_date": "2022-02-07",
-      "sell_date": "2025-10-30",
-      "buy_price": 1021012,
-      "sell_price": 966012,
-      "size_sqft": 474,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -1.4988352614074163,
-      "created_at": "2026-05-04 12:55:59"
-    },
-    {
-      "id": 1851,
-      "condo_id": 83,
-      "buy_date": "2021-03-29",
-      "sell_date": "2025-12-05",
-      "buy_price": 1200844,
-      "sell_price": 950844,
-      "size_sqft": 474,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -4.795515488267155,
-      "created_at": "2026-05-04 12:55:59"
-    },
-    {
-      "id": 1852,
-      "condo_id": 83,
-      "buy_date": "2021-01-11",
-      "sell_date": "2024-02-21",
-      "buy_price": 3621320,
-      "sell_price": 3390660,
-      "size_sqft": 1755,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -2.1118889469347035,
-      "created_at": "2026-05-04 12:55:59"
-    },
-    {
-      "id": 1853,
-      "condo_id": 83,
-      "buy_date": "2021-12-16",
-      "sell_date": "2025-09-18",
-      "buy_price": 1920320,
-      "sell_price": 2020320,
-      "size_sqft": 1098,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 1.3629128119078349,
-      "created_at": "2026-05-04 12:55:59"
-    },
-    {
-      "id": 1854,
-      "condo_id": 83,
-      "buy_date": "2021-06-29",
-      "sell_date": "2025-05-06",
-      "buy_price": 2150730,
-      "sell_price": 2200730,
-      "size_sqft": 1055,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 0.58849433073902,
-      "created_at": "2026-05-04 12:55:59"
-    },
-    {
-      "id": 1855,
-      "condo_id": 84,
-      "buy_date": "2023-10-09",
-      "sell_date": "2023-12-27",
-      "buy_price": 3379716,
-      "sell_price": 3364716,
-      "size_sqft": 1679,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": -2.633572914040294,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1856,
-      "condo_id": 84,
-      "buy_date": "2023-08-04",
+      "id": 1760,
+      "condo_id": 80,
+      "buy_date": "2022-05-13",
       "sell_date": "2025-12-11",
-      "buy_price": 1160578,
-      "sell_price": 1190578,
-      "size_sqft": 646,
+      "buy_price": 1999240,
+      "sell_price": 2109240,
+      "size_sqft": 1302,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 1.0997495546633207,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 1.5059407069210717,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1857,
-      "condo_id": 84,
-      "buy_date": "2022-08-03",
-      "sell_date": "2026-04-10",
-      "buy_price": 1718772,
-      "sell_price": 2148772,
-      "size_sqft": 1076,
+      "id": 1761,
+      "condo_id": 80,
+      "buy_date": "2022-04-29",
+      "sell_date": "2025-09-15",
+      "buy_price": 5850779,
+      "sell_price": 6400779,
+      "size_sqft": 3993,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 6.2788697426409135,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 2.6644856547680895,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1858,
-      "condo_id": 84,
-      "buy_date": "2022-06-24",
-      "sell_date": "2026-01-27",
-      "buy_price": 1189780,
-      "sell_price": 1287780,
-      "size_sqft": 635,
+      "id": 1762,
+      "condo_id": 80,
+      "buy_date": "2022-04-18",
+      "sell_date": "2026-04-07",
+      "buy_price": 1804756,
+      "sell_price": 1817256,
+      "size_sqft": 1119,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 2.2334522729248185,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 0.1727056767017343,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1859,
-      "condo_id": 84,
-      "buy_date": "2022-06-24",
-      "sell_date": "2025-12-15",
-      "buy_price": 2599827,
-      "sell_price": 3249827,
-      "size_sqft": 1421,
+      "id": 1763,
+      "condo_id": 80,
+      "buy_date": "2021-10-27",
+      "sell_date": "2025-04-08",
+      "buy_price": 1858918,
+      "sell_price": 1926918,
+      "size_sqft": 1119,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 6.583561101973157,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 1.0317790016925343,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1860,
-      "condo_id": 84,
-      "buy_date": "2022-02-25",
-      "sell_date": "2023-03-31",
-      "buy_price": 1609744,
-      "sell_price": 1749744,
-      "size_sqft": 1044,
+      "id": 1764,
+      "condo_id": 80,
+      "buy_date": "2021-10-01",
+      "sell_date": "2025-03-18",
+      "buy_price": 1399468,
+      "sell_price": 1539468,
+      "size_sqft": 861,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 8.001980918992068,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 2.8298790372663696,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1861,
-      "condo_id": 84,
-      "buy_date": "2021-12-21",
-      "sell_date": "2025-08-21",
-      "buy_price": 1420296,
-      "sell_price": 1600296,
-      "size_sqft": 786,
+      "id": 1765,
+      "condo_id": 80,
+      "buy_date": "2021-09-10",
+      "sell_date": "2022-09-12",
+      "buy_price": 11000000,
+      "sell_price": 17625000,
+      "size_sqft": 7050,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 3.307802666781834,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 60.22727272727273,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1862,
-      "condo_id": 84,
-      "buy_date": "2021-11-18",
-      "sell_date": "2026-01-20",
-      "buy_price": 1238882,
-      "sell_price": 1379994,
-      "size_sqft": 721,
+      "id": 1766,
+      "condo_id": 80,
+      "buy_date": "2021-08-18",
+      "sell_date": "2025-10-28",
+      "buy_price": 1779707,
+      "sell_price": 1849707,
+      "size_sqft": 1119,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 2.622677430791409,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 0.9301836659829865,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1863,
-      "condo_id": 84,
-      "buy_date": "2021-10-11",
-      "sell_date": "2025-07-11",
-      "buy_price": 1180010,
-      "sell_price": 1350010,
-      "size_sqft": 635,
+      "id": 1767,
+      "condo_id": 80,
+      "buy_date": "2021-06-23",
+      "sell_date": "2024-10-11",
+      "buy_price": 1780872,
+      "sell_price": 2260872,
+      "size_sqft": 1163,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 3.6542259232077434,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 7.421937421669056,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1864,
-      "condo_id": 84,
-      "buy_date": "2021-09-17",
-      "sell_date": "2026-03-26",
-      "buy_price": 1128095,
-      "sell_price": 1268095,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.6337619703109993,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1865,
-      "condo_id": 84,
-      "buy_date": "2021-08-12",
-      "sell_date": "2024-09-27",
-      "buy_price": 2949184,
-      "sell_price": 3519184,
-      "size_sqft": 1679,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 5.898225493544462,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1866,
-      "condo_id": 84,
-      "buy_date": "2021-08-12",
-      "sell_date": "2023-09-28",
-      "buy_price": 1127995,
-      "sell_price": 1229995,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.242822590598672,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1867,
-      "condo_id": 84,
-      "buy_date": "2021-07-30",
-      "sell_date": "2025-11-10",
-      "buy_price": 1385920,
-      "sell_price": 1585920,
-      "size_sqft": 840,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 3.159671231806227,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1868,
-      "condo_id": 84,
-      "buy_date": "2021-06-07",
-      "sell_date": "2024-08-07",
-      "buy_price": 1529584,
-      "sell_price": 1919584,
-      "size_sqft": 1076,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 7.435426540632806,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1869,
-      "condo_id": 84,
-      "buy_date": "2021-05-10",
-      "sell_date": "2025-03-21",
-      "buy_price": 1370296,
-      "sell_price": 1600296,
-      "size_sqft": 786,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.1307360418619155,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1870,
-      "condo_id": 84,
-      "buy_date": "2021-05-07",
-      "sell_date": "2024-07-19",
-      "buy_price": 2400700,
-      "sell_price": 2908700,
-      "size_sqft": 1475,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 6.2489234824467665,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1871,
-      "condo_id": 84,
-      "buy_date": "2021-02-19",
-      "sell_date": "2025-04-04",
-      "buy_price": 1099945,
-      "sell_price": 1337945,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.813240889423098,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1872,
-      "condo_id": 84,
-      "buy_date": "2021-02-09",
-      "sell_date": "2024-12-12",
-      "buy_price": 1127625,
-      "sell_price": 1317625,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.145823922565817,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1873,
-      "condo_id": 84,
-      "buy_date": "2020-12-21",
-      "sell_date": "2024-01-03",
-      "buy_price": 2850224,
-      "sell_price": 3350224,
-      "size_sqft": 1744,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 5.381869354498581,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1874,
-      "condo_id": 84,
-      "buy_date": "2020-12-02",
-      "sell_date": "2024-05-27",
-      "buy_price": 1649900,
-      "sell_price": 2099900,
+      "id": 1768,
+      "condo_id": 80,
+      "buy_date": "2021-06-04",
+      "sell_date": "2025-05-29",
+      "buy_price": 1480520,
+      "sell_price": 1730520,
       "size_sqft": 1012,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 7.313880610205881,
-      "created_at": "2026-05-04 13:15:55"
+      "annualized_return": 4.064121928039577,
+      "created_at": "2026-05-04 12:46:12"
     },
     {
-      "id": 1875,
-      "condo_id": 84,
-      "buy_date": "2020-11-30",
-      "sell_date": "2025-10-15",
-      "buy_price": 1829540,
-      "sell_price": 2370428,
-      "size_sqft": 1076,
+      "id": 1769,
+      "condo_id": 80,
+      "buy_date": "2021-04-28",
+      "sell_date": "2024-05-13",
+      "buy_price": 2129844,
+      "sell_price": 2549844,
+      "size_sqft": 1507,
       "unit_type": null,
       "floor_level": null,
-      "annualized_return": 5.409141556304298,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1876,
-      "condo_id": 84,
-      "buy_date": "2020-09-11",
-      "sell_date": "2024-05-09",
-      "buy_price": 1750780,
-      "sell_price": 2442580,
-      "size_sqft": 1195,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 9.506792878558556,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1877,
-      "condo_id": 84,
-      "buy_date": "2020-09-09",
-      "sell_date": "2023-12-21",
-      "buy_price": 1129530,
-      "sell_price": 1319530,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.900086340591869,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1878,
-      "condo_id": 84,
-      "buy_date": "2020-09-03",
-      "sell_date": "2025-02-26",
-      "buy_price": 1919474,
-      "sell_price": 3037474,
-      "size_sqft": 1367,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 10.951044914726626,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1879,
-      "condo_id": 84,
-      "buy_date": "2020-08-18",
-      "sell_date": "2021-11-01",
-      "buy_price": 2849756,
-      "sell_price": 2949756,
-      "size_sqft": 1604,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.797542673079745,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1880,
-      "condo_id": 84,
-      "buy_date": "2020-07-23",
-      "sell_date": "2023-11-14",
-      "buy_price": 1049945,
-      "sell_price": 1337945,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 7.542843015864942,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1881,
-      "condo_id": 84,
-      "buy_date": "2020-03-27",
-      "sell_date": "2023-06-27",
-      "buy_price": 1030155,
-      "sell_price": 1240155,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 5.874607538392285,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1882,
-      "condo_id": 84,
-      "buy_date": "2020-03-13",
-      "sell_date": "2023-12-04",
-      "buy_price": 1800494,
-      "sell_price": 2350494,
-      "size_sqft": 1206,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 7.367125218747805,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1883,
-      "condo_id": 84,
-      "buy_date": "2020-02-13",
-      "sell_date": "2023-04-03",
-      "buy_price": 1050100,
-      "sell_price": 1195100,
-      "size_sqft": 646,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.169127776225179,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1884,
-      "condo_id": 84,
-      "buy_date": "2020-01-22",
-      "sell_date": "2025-01-22",
-      "buy_price": 1049940,
-      "sell_price": 1297940,
-      "size_sqft": 635,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.332118757522219,
-      "created_at": "2026-05-04 13:15:55"
-    },
-    {
-      "id": 1885,
-      "condo_id": 85,
-      "buy_date": "2022-11-21",
-      "sell_date": "2025-11-27",
-      "buy_price": 5400495,
-      "sell_price": 5780495,
-      "size_sqft": 2605,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 2.292506533875316,
-      "created_at": "2026-05-04 13:18:53"
-    },
-    {
-      "id": 1886,
-      "condo_id": 85,
-      "buy_date": "2021-01-12",
-      "sell_date": "2023-05-12",
-      "buy_price": 4809408,
-      "sell_price": 5899408,
-      "size_sqft": 2788,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 9.149434647624233,
-      "created_at": "2026-05-04 13:18:53"
-    },
-    {
-      "id": 1887,
-      "condo_id": 85,
-      "buy_date": "2020-07-09",
-      "sell_date": "2023-07-11",
-      "buy_price": 1879570,
-      "sell_price": 2319570,
-      "size_sqft": 990,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 7.262930872908391,
-      "created_at": "2026-05-04 13:18:53"
-    },
-    {
-      "id": 1888,
-      "condo_id": 86,
-      "buy_date": "2021-06-10",
-      "sell_date": "2025-02-24",
-      "buy_price": 6266643,
-      "sell_price": 7598643,
-      "size_sqft": 2669,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 5.39683489653584,
-      "created_at": "2026-05-04 13:21:28"
-    },
-    {
-      "id": 1889,
-      "condo_id": 86,
-      "buy_date": "2021-02-09",
-      "sell_date": "2026-02-13",
-      "buy_price": 4809768,
-      "sell_price": 5924880,
-      "size_sqft": 2110,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 4.258407269387532,
-      "created_at": "2026-05-04 13:21:28"
+      "annualized_return": 6.011035226295269,
+      "created_at": "2026-05-04 12:46:12"
     }
   ]
 }
