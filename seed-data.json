@@ -1119,19 +1119,6 @@
       "created_at": "2026-05-05 08:17:16"
     },
     {
-      "id": 94,
-      "name": "KOOLA",
-      "district": "D23",
-      "area": "Hillview / Dairy Farm",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2015,
-      "total_units": 50,
-      "developer": "Far East Organization",
-      "mrt_station": "Hillview MRT",
-      "mrt_distance": "6 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
       "id": 95,
       "name": "GLENTREES",
       "district": "D23",
