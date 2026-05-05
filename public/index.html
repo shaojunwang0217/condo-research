@@ -167,6 +167,13 @@ function retBadge(val) {
   return `<span class="badge red">${val.toFixed(1)}%</span>`;
 }
 
+function psfBadge(psf) {
+  if (psf == null) return '<span class="badge" style="background:rgba(148,163,184,0.1);color:var(--text2)">—</span>';
+  if (psf < 1350) return `<span class="badge green">S$${Math.round(psf).toLocaleString()}</span>`;
+  if (psf < 1525) return `<span class="badge yellow">S$${Math.round(psf).toLocaleString()}</span>`;
+  return `<span class="badge red">S$${Math.round(psf).toLocaleString()}</span>`;
+}
+
 function txnBadge(n) {
   if (n >= 20) return `<span class="badge green">${n}</span>`;
   if (n >= 5) return `<span class="badge yellow">${n}</span>`;
@@ -230,7 +237,7 @@ function renderTable() {
       <td>${c.max_annualized != null ? retBadge(c.max_annualized) : '—'}</td>
       <td>${c.min_annualized != null ? retBadge(c.min_annualized) : '—'}</td>
       <td>${txnBadge(c.total_txns || 0)}</td>
-      <td>${c.current_avg_psf ? `S$${Math.round(c.current_avg_psf).toLocaleString()}` : '—'}</td>
+      <td>${psfBadge(c.current_avg_psf)}</td>
     </tr>
   `).join('');
 }
@@ -273,7 +280,7 @@ async function openDetail(id) {
     <div class="detail-stat"><div class="lbl">Max Return</div><div class="val" style="color:var(--green)">${data.max_annualized?.toFixed(1) || '—'}%</div></div>
     <div class="detail-stat"><div class="lbl">Min Return</div><div class="val" style="color:var(--red)">${data.min_annualized?.toFixed(1) || '—'}%</div></div>
     <div class="detail-stat"><div class="lbl">Transactions</div><div class="val">${data.total_txns || 0}</div></div>
-    <div class="detail-stat"><div class="lbl">Avg PSF</div><div class="val">${data.current_avg_psf ? 'S$' + Math.round(data.current_avg_psf).toLocaleString() : '—'}</div></div>
+    <div class="detail-stat"><div class="lbl">Avg PSF</div><div class="val" style="color:${data.current_avg_psf < 1350 ? 'var(--green)' : data.current_avg_psf < 1525 ? 'var(--yellow)' : 'var(--red)'};font-weight:700">${data.current_avg_psf ? 'S$' + Math.round(data.current_avg_psf).toLocaleString() : '—'}</div></div>
     <div class="detail-stat"><div class="lbl">Total Units</div><div class="val">${data.total_units || '—'}</div></div>
     <div class="detail-stat"><div class="lbl">MRT</div><div class="val" style="font-size:13px">${data.mrt_station || '—'}</div></div>
     <div class="detail-stat"><div class="lbl">Developer</div><div class="val" style="font-size:13px">${data.developer || '—'}</div></div>
