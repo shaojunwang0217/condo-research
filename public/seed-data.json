@@ -2134,6 +2134,16 @@
       "current_avg_psf": 2404.2,
       "rental_yield": null,
       "updated_at": "2026-05-05 08:09:59"
+    },
+    {
+      "condo_id": 87,
+      "total_txns": 2,
+      "avg_annualized": 7.45,
+      "max_annualized": 8,
+      "min_annualized": 6.9,
+      "current_avg_psf": 1643.5,
+      "rental_yield": null,
+      "updated_at": "2026-05-05 08:30:04"
     }
   ],
   "transactions": [
@@ -24808,6 +24818,32 @@
       "floor_level": "#32-XX",
       "annualized_return": -1.1,
       "created_at": "2026-05-05 08:09:59"
+    },
+    {
+      "id": 1793,
+      "condo_id": 87,
+      "buy_date": "2021-10-20",
+      "sell_date": "2024-10-28",
+      "buy_price": 1349822,
+      "sell_price": 1649676,
+      "size_sqft": 958,
+      "unit_type": "2 BEDROOM",
+      "floor_level": "#08-XX",
+      "annualized_return": 6.9,
+      "created_at": "2026-05-05 08:30:04"
+    },
+    {
+      "id": 1794,
+      "condo_id": 87,
+      "buy_date": "2020-07-29",
+      "sell_date": "2023-11-28",
+      "buy_price": 1199880,
+      "sell_price": 1549350,
+      "size_sqft": 990,
+      "unit_type": "2 BEDROOM",
+      "floor_level": "#04-XX",
+      "annualized_return": 8,
+      "created_at": "2026-05-05 08:30:04"
     }
   ]
 }
