@@ -1784,13 +1784,13 @@
     },
     {
       "condo_id": 80,
-      "total_txns": 13,
-      "avg_annualized": 6.779278975938407,
-      "max_annualized": 60.22727272727273,
+      "total_txns": 12,
+      "avg_annualized": 2.3252794966605483,
+      "max_annualized": 7.421937421669056,
       "min_annualized": -2.073646611234592,
-      "current_avg_psf": 1652.4285714285713,
+      "current_avg_psf": 1643.8333333333333,
       "rental_yield": null,
-      "updated_at": "2026-05-05 07:48:59"
+      "updated_at": "2026-05-05 07:50:58"
     },
     {
       "condo_id": 81,
@@ -24214,19 +24214,6 @@
       "unit_type": null,
       "floor_level": null,
       "annualized_return": 2.8298790372663696,
-      "created_at": "2026-05-04 12:46:12"
-    },
-    {
-      "id": 1765,
-      "condo_id": 80,
-      "buy_date": "2021-09-10",
-      "sell_date": "2022-09-12",
-      "buy_price": 11000000,
-      "sell_price": 17625000,
-      "size_sqft": 7050,
-      "unit_type": null,
-      "floor_level": null,
-      "annualized_return": 60.22727272727273,
       "created_at": "2026-05-04 12:46:12"
     },
     {
