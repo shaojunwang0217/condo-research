@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: condo-research
+    runtime: node
+    repo: https://github.com/shaojunwang0217/condo-research
+    plan: free
+    envVars:
+      - key: NODE_VERSION
+        value: 22.22.2
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/condos
