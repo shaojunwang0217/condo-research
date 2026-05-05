@@ -1119,45 +1119,6 @@
       "created_at": "2026-05-05 08:17:16"
     },
     {
-      "id": 96,
-      "name": "FOREST HILL",
-      "district": "D23",
-      "area": "Hillview / Dairy Farm",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2010,
-      "total_units": 314,
-      "developer": "Hong Leong Holdings",
-      "mrt_station": "Hillview MRT",
-      "mrt_distance": "10 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
-      "id": 97,
-      "name": "HILLBROOKS",
-      "district": "D23",
-      "area": "Hillview / Dairy Farm",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2013,
-      "total_units": 509,
-      "developer": "Frasers Centrepoint",
-      "mrt_station": "Hillview MRT",
-      "mrt_distance": "8 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
-      "id": 98,
-      "name": "MONTROSA",
-      "district": "D23",
-      "area": "Hillview / Dairy Farm",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2013,
-      "total_units": 254,
-      "developer": "Frasers Centrepoint",
-      "mrt_station": "Hillview MRT",
-      "mrt_distance": "8 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
       "id": 99,
       "name": "BUKIT BATOK RESIDENCES",
       "district": "D23",
@@ -1194,32 +1155,6 @@
       "developer": "City Developments Limited (CDL)",
       "mrt_station": "Bukit Batok MRT",
       "mrt_distance": "5 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
-      "id": 102,
-      "name": "DOVER PARKVIEW",
-      "district": "D23",
-      "area": "Bukit Batok",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2005,
-      "total_units": 140,
-      "developer": "City Developments Limited (CDL)",
-      "mrt_station": "Bukit Batok MRT",
-      "mrt_distance": "15 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
-      "id": 103,
-      "name": "GUILIN VIEW",
-      "district": "D23",
-      "area": "Bukit Batok",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2000,
-      "total_units": 246,
-      "developer": "HDB (DBSS)",
-      "mrt_station": "Bukit Batok MRT",
-      "mrt_distance": "10 min",
       "created_at": "2026-05-05 08:17:16"
     },
     {
