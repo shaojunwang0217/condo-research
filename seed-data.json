@@ -1028,9 +1028,9 @@
       "avg_annualized": 7.758357452566065,
       "max_annualized": 10.069568312150935,
       "min_annualized": 2.696867162049843,
-      "current_avg_psf": 2010.090909090909,
+      "current_avg_psf": 2092.6666666666665,
       "rental_yield": null,
-      "updated_at": "2026-05-02 10:05:53"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 2,
@@ -1040,7 +1040,7 @@
       "min_annualized": 8.7319373322575,
       "current_avg_psf": 2176,
       "rental_yield": null,
-      "updated_at": "2026-05-02 10:08:43"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 3,
@@ -1050,7 +1050,7 @@
       "min_annualized": 6.632665131001825,
       "current_avg_psf": 1599.2,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:40:23"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 4,
@@ -1060,7 +1060,7 @@
       "min_annualized": 5.077965150976449,
       "current_avg_psf": 2070.3333333333335,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:42:30"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 5,
@@ -1068,9 +1068,9 @@
       "avg_annualized": 5.597549673709853,
       "max_annualized": 8.187409753896336,
       "min_annualized": 3.3427071948058718,
-      "current_avg_psf": 1984.2222222222222,
+      "current_avg_psf": 1998.8,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:43:55"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 6,
@@ -1080,7 +1080,7 @@
       "min_annualized": 3.903804061347671,
       "current_avg_psf": 1651,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:45:50"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 7,
@@ -1090,7 +1090,7 @@
       "min_annualized": 3.565424884729196,
       "current_avg_psf": 2300,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:47:38"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 8,
@@ -1100,7 +1100,7 @@
       "min_annualized": 2.801429710158021,
       "current_avg_psf": 1524,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:54:38"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 9,
@@ -1110,7 +1110,7 @@
       "min_annualized": 2.464611391446092,
       "current_avg_psf": 1903,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:57:15"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 10,
@@ -1118,9 +1118,9 @@
       "avg_annualized": 9.84916118670971,
       "max_annualized": 14.27939239802698,
       "min_annualized": 7.059836925215146,
-      "current_avg_psf": 1329.15625,
+      "current_avg_psf": 1352.9375,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:58:58"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 11,
@@ -1128,9 +1128,9 @@
       "avg_annualized": 8.785197747052841,
       "max_annualized": 11.290982950336371,
       "min_annualized": 5.929634592430899,
-      "current_avg_psf": 1838.2,
+      "current_avg_psf": 1870.8,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:03:24"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 12,
@@ -1138,9 +1138,9 @@
       "avg_annualized": 9.012476450758333,
       "max_annualized": 12.32976237120611,
       "min_annualized": 3.6853568973966855,
-      "current_avg_psf": 1187.4166666666667,
+      "current_avg_psf": 1255,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:04:57"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 13,
@@ -1148,9 +1148,9 @@
       "avg_annualized": 10.067918239378924,
       "max_annualized": 12.36219774498155,
       "min_annualized": 6.197606015507184,
-      "current_avg_psf": 1651.4444444444443,
+      "current_avg_psf": 1709,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:07:03"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 14,
@@ -1158,9 +1158,9 @@
       "avg_annualized": 7.573318344925515,
       "max_annualized": 10.201831625658553,
       "min_annualized": 5.326769704630241,
-      "current_avg_psf": 1505,
+      "current_avg_psf": 1510.6,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:08:57"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 15,
@@ -1168,9 +1168,9 @@
       "avg_annualized": 8.017662163044701,
       "max_annualized": 12.015719454711714,
       "min_annualized": 4.697397056380992,
-      "current_avg_psf": 1505.090909090909,
+      "current_avg_psf": 1534.8823529411766,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:11:21"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 16,
@@ -1178,9 +1178,9 @@
       "avg_annualized": 7.600594706358867,
       "max_annualized": 13.966443768245629,
       "min_annualized": 2.647025128076308,
-      "current_avg_psf": 1442,
+      "current_avg_psf": 1486.6,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:13:09"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 17,
@@ -1188,9 +1188,9 @@
       "avg_annualized": 4.584814523988306,
       "max_annualized": 6.701893841221951,
       "min_annualized": 0.45855199217799125,
-      "current_avg_psf": 1492.1333333333334,
+      "current_avg_psf": 1498.8,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:15:31"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 18,
@@ -1198,9 +1198,9 @@
       "avg_annualized": 5.399870961408275,
       "max_annualized": 12.053013394926593,
       "min_annualized": 1.12024174133456,
-      "current_avg_psf": 1671.857142857143,
+      "current_avg_psf": 1713.6521739130435,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:18:25"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 19,
@@ -1208,9 +1208,9 @@
       "avg_annualized": 9.858242007295999,
       "max_annualized": 11.768507882775946,
       "min_annualized": 4.868331490636502,
-      "current_avg_psf": 1578.4705882352941,
+      "current_avg_psf": 1637.3333333333333,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:29:15"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 20,
@@ -1218,9 +1218,9 @@
       "avg_annualized": 10.295512239022104,
       "max_annualized": 13.161410257802263,
       "min_annualized": 8.007698331718615,
-      "current_avg_psf": 1525.2666666666667,
+      "current_avg_psf": 1556.5,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:31:45"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 21,
@@ -1230,7 +1230,7 @@
       "min_annualized": 9.58277817032489,
       "current_avg_psf": 1325.3333333333333,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:34:18"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 22,
@@ -1238,9 +1238,9 @@
       "avg_annualized": 9.676483143080164,
       "max_annualized": 14.860894517700029,
       "min_annualized": 7.470968522910448,
-      "current_avg_psf": 1161.5,
+      "current_avg_psf": 1204,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:38:29"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 23,
@@ -1248,9 +1248,9 @@
       "avg_annualized": 9.414252549331557,
       "max_annualized": 18.114549679573642,
       "min_annualized": 6.036766276805605,
-      "current_avg_psf": 1280.2,
+      "current_avg_psf": 1285.4,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:42:07"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 24,
@@ -1258,9 +1258,9 @@
       "avg_annualized": 6.59719956117706,
       "max_annualized": 10.325520296768364,
       "min_annualized": 2.3129041452291332,
-      "current_avg_psf": 1468.409090909091,
+      "current_avg_psf": 1490.5454545454545,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:45:13"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 25,
@@ -1268,9 +1268,9 @@
       "avg_annualized": 5.528844826368876,
       "max_annualized": 9.434863489973333,
       "min_annualized": 2.9174681230009103,
-      "current_avg_psf": 1461.875,
+      "current_avg_psf": 1471.625,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:47:32"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 26,
@@ -1280,7 +1280,7 @@
       "min_annualized": 8.209924036835293,
       "current_avg_psf": 1031,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:49:06"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 27,
@@ -1290,7 +1290,7 @@
       "min_annualized": 9.894967146223577,
       "current_avg_psf": 1614.8,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:50:48"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 28,
@@ -1298,9 +1298,9 @@
       "avg_annualized": 7.2327761112339575,
       "max_annualized": 9.236053432071456,
       "min_annualized": 5.274287354103269,
-      "current_avg_psf": 1579.7894736842106,
+      "current_avg_psf": 1628.7,
       "rental_yield": null,
-      "updated_at": "2026-05-04 06:53:22"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 29,
@@ -1308,9 +1308,9 @@
       "avg_annualized": 8.035553744027784,
       "max_annualized": 9.972887843494394,
       "min_annualized": 5.221967646155257,
-      "current_avg_psf": 1695.578947368421,
+      "current_avg_psf": 1747.7,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:07:40"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 30,
@@ -1318,9 +1318,9 @@
       "avg_annualized": 9.692360634309628,
       "max_annualized": 14.111335506037825,
       "min_annualized": 4.860134123895543,
-      "current_avg_psf": 1568,
+      "current_avg_psf": 1591.5,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:10:04"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 31,
@@ -1328,9 +1328,9 @@
       "avg_annualized": 8.90848312680656,
       "max_annualized": 12.103517915772732,
       "min_annualized": 6.4932738266856305,
-      "current_avg_psf": 1506.909090909091,
+      "current_avg_psf": 1530.1818181818182,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:12:56"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 32,
@@ -1340,7 +1340,7 @@
       "min_annualized": 5.497227111160008,
       "current_avg_psf": 1136,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:14:47"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 33,
@@ -1348,9 +1348,9 @@
       "avg_annualized": 8.373578485081682,
       "max_annualized": 13.487502972521881,
       "min_annualized": 5.4883597875197365,
-      "current_avg_psf": 1012.3636363636364,
+      "current_avg_psf": 1037,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:17:05"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 34,
@@ -1360,7 +1360,7 @@
       "min_annualized": 8.751917231903095,
       "current_avg_psf": 1734.6666666666667,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:18:31"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 35,
@@ -1368,9 +1368,9 @@
       "avg_annualized": 7.988010948332993,
       "max_annualized": 11.160410255807228,
       "min_annualized": 5.291057690381695,
-      "current_avg_psf": 1556.392857142857,
+      "current_avg_psf": 1593.5,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:20:38"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 36,
@@ -1378,9 +1378,9 @@
       "avg_annualized": 5.292558543534757,
       "max_annualized": 10.462213526025742,
       "min_annualized": 2.986402075539707,
-      "current_avg_psf": 1689.5714285714287,
+      "current_avg_psf": 1730.857142857143,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:23:33"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 37,
@@ -1388,9 +1388,9 @@
       "avg_annualized": 7.592169451127583,
       "max_annualized": 11.96266740388625,
       "min_annualized": 3.6487118577576583,
-      "current_avg_psf": 1640.25,
+      "current_avg_psf": 1674.75,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:27:11"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 38,
@@ -1398,9 +1398,9 @@
       "avg_annualized": 10.341525524003599,
       "max_annualized": 17.658594896809277,
       "min_annualized": 7.3053285794128175,
-      "current_avg_psf": 1438.6785714285713,
+      "current_avg_psf": 1512.2142857142858,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:31:09"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 39,
@@ -1408,9 +1408,9 @@
       "avg_annualized": 7.749999644505894,
       "max_annualized": 10.346984516271895,
       "min_annualized": 4.492475330795109,
-      "current_avg_psf": 1414.2105263157894,
+      "current_avg_psf": 1456,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:33:16"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 41,
@@ -1418,9 +1418,9 @@
       "avg_annualized": 6.045770212563538,
       "max_annualized": 9.59612428325951,
       "min_annualized": 2.3951753211602256,
-      "current_avg_psf": 1582.8923076923077,
+      "current_avg_psf": 1631.1515151515152,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:37:42"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 42,
@@ -1428,9 +1428,9 @@
       "avg_annualized": 10.558307429754661,
       "max_annualized": 16.250812618759515,
       "min_annualized": 7.028670050089136,
-      "current_avg_psf": 1447.1351351351352,
+      "current_avg_psf": 1511.2631578947369,
       "rental_yield": null,
-      "updated_at": "2026-05-02 09:48:18"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 43,
@@ -1438,9 +1438,9 @@
       "avg_annualized": 7.4153409087781545,
       "max_annualized": 15.881277111478397,
       "min_annualized": 4.566650694626961,
-      "current_avg_psf": 1376.642857142857,
+      "current_avg_psf": 1412,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:40:16"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 44,
@@ -1448,9 +1448,9 @@
       "avg_annualized": 9.363385150428302,
       "max_annualized": 10.862243997564924,
       "min_annualized": 6.9202640941674165,
-      "current_avg_psf": 1447.8235294117646,
+      "current_avg_psf": 1533.7777777777778,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:42:27"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 45,
@@ -1458,9 +1458,9 @@
       "avg_annualized": 9.445336672391663,
       "max_annualized": 12.964226126670697,
       "min_annualized": 6.652384007040402,
-      "current_avg_psf": 1453.4,
+      "current_avg_psf": 1483.5,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:44:08"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 46,
@@ -1468,9 +1468,9 @@
       "avg_annualized": 12.208636327190634,
       "max_annualized": 17.660290428557946,
       "min_annualized": 8.601882086037783,
-      "current_avg_psf": 1380.103448275862,
+      "current_avg_psf": 1426.0666666666666,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:45:49"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 47,
@@ -1478,9 +1478,9 @@
       "avg_annualized": 8.848121249208127,
       "max_annualized": 14.805625126052945,
       "min_annualized": 5.3109762726644805,
-      "current_avg_psf": 1339.0555555555557,
+      "current_avg_psf": 1334.3333333333333,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:47:12"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 48,
@@ -1488,9 +1488,9 @@
       "avg_annualized": 10.235532406013268,
       "max_annualized": 13.117560772759074,
       "min_annualized": 6.471373524701707,
-      "current_avg_psf": 1397.5555555555557,
+      "current_avg_psf": 1480,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:48:30"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 49,
@@ -1498,9 +1498,9 @@
       "avg_annualized": 9.054655949100523,
       "max_annualized": 11.847503103653123,
       "min_annualized": 7.251152964287355,
-      "current_avg_psf": 1457.857142857143,
+      "current_avg_psf": 1507,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:50:16"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 50,
@@ -1508,9 +1508,9 @@
       "avg_annualized": 5.536318301993543,
       "max_annualized": 8.492427748108078,
       "min_annualized": 2.154644119328708,
-      "current_avg_psf": 1864.0666666666666,
+      "current_avg_psf": 1884.875,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:52:30"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 51,
@@ -1518,9 +1518,9 @@
       "avg_annualized": 7.077732559500728,
       "max_annualized": 10.307785751038722,
       "min_annualized": 3.212160067598413,
-      "current_avg_psf": 1482.5,
+      "current_avg_psf": 1489.4,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:54:59"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 52,
@@ -1528,9 +1528,9 @@
       "avg_annualized": 9.03568573986988,
       "max_annualized": 17.03049393487919,
       "min_annualized": 4.794633309538554,
-      "current_avg_psf": 1457.952380952381,
+      "current_avg_psf": 1508.2727272727273,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:56:51"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 53,
@@ -1538,9 +1538,9 @@
       "avg_annualized": 9.13510586737619,
       "max_annualized": 13.290309517909282,
       "min_annualized": 4.660515519122166,
-      "current_avg_psf": 1312.88,
+      "current_avg_psf": 1373.7692307692307,
       "rental_yield": null,
-      "updated_at": "2026-05-04 07:59:35"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 54,
@@ -1548,9 +1548,9 @@
       "avg_annualized": 8.004990779823354,
       "max_annualized": 10.977806976498394,
       "min_annualized": 4.340770149715012,
-      "current_avg_psf": 1247.7272727272727,
+      "current_avg_psf": 1290.3333333333333,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:01:33"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 55,
@@ -1558,9 +1558,9 @@
       "avg_annualized": 7.107850656601973,
       "max_annualized": 11.023661074681645,
       "min_annualized": 4.969983969596403,
-      "current_avg_psf": 1259.9166666666667,
+      "current_avg_psf": 1266,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:03:19"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 56,
@@ -1570,7 +1570,7 @@
       "min_annualized": 5.011486704691426,
       "current_avg_psf": 1241.4,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:36:54"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 57,
@@ -1578,9 +1578,9 @@
       "avg_annualized": 8.332516212271928,
       "max_annualized": 12.984062610637404,
       "min_annualized": 3.5436041644765437,
-      "current_avg_psf": 1433.8076923076924,
+      "current_avg_psf": 1448.3076923076924,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:38:51"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 58,
@@ -1588,9 +1588,9 @@
       "avg_annualized": 5.957960875975453,
       "max_annualized": 9.42747078479469,
       "min_annualized": 1.6772291251611282,
-      "current_avg_psf": 1293,
+      "current_avg_psf": 1288.142857142857,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:40:20"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 59,
@@ -1598,9 +1598,9 @@
       "avg_annualized": 5.697207206458273,
       "max_annualized": 7.712088502421421,
       "min_annualized": 3.032247490796891,
-      "current_avg_psf": 1362.1538461538462,
+      "current_avg_psf": 1373.5714285714287,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:41:58"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 60,
@@ -1608,9 +1608,9 @@
       "avg_annualized": 8.629745456603517,
       "max_annualized": 12.431237708327414,
       "min_annualized": 0.9600272914482177,
-      "current_avg_psf": 1195.28125,
+      "current_avg_psf": 1194.9375,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:45:36"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 61,
@@ -1620,7 +1620,7 @@
       "min_annualized": 9.412395035467537,
       "current_avg_psf": 1176.25,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:47:02"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 62,
@@ -1630,7 +1630,7 @@
       "min_annualized": 9.24592714734942,
       "current_avg_psf": 1037,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:48:46"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 63,
@@ -1638,9 +1638,9 @@
       "avg_annualized": 10.0222438689333,
       "max_annualized": 13.742001413281457,
       "min_annualized": 7.524440608148009,
-      "current_avg_psf": 1348.4117647058824,
+      "current_avg_psf": 1399,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:50:21"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 64,
@@ -1648,9 +1648,9 @@
       "avg_annualized": 6.670918265154715,
       "max_annualized": 11.78976808930332,
       "min_annualized": 3.9982153345574867,
-      "current_avg_psf": 1490.142857142857,
+      "current_avg_psf": 1462.6,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:52:03"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 65,
@@ -1658,9 +1658,9 @@
       "avg_annualized": 7.155936320941812,
       "max_annualized": 11.323119834435724,
       "min_annualized": 3.706177638036068,
-      "current_avg_psf": 1274.483870967742,
+      "current_avg_psf": 1282.25,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:54:01"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 66,
@@ -1668,9 +1668,9 @@
       "avg_annualized": 6.031979631433407,
       "max_annualized": 10.104958250531393,
       "min_annualized": 2.5446853715252793,
-      "current_avg_psf": 1206.4347826086957,
+      "current_avg_psf": 1227.9166666666667,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:55:41"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 67,
@@ -1678,9 +1678,9 @@
       "avg_annualized": 6.802702209668678,
       "max_annualized": 11.235457590190467,
       "min_annualized": 2.542146135924339,
-      "current_avg_psf": 1342.037037037037,
+      "current_avg_psf": 1356.2857142857142,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:57:10"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 68,
@@ -1688,9 +1688,9 @@
       "avg_annualized": 7.608570927747468,
       "max_annualized": 13.064441819680628,
       "min_annualized": 4.008654568971148,
-      "current_avg_psf": 1252.625,
+      "current_avg_psf": 1287.9166666666667,
       "rental_yield": null,
-      "updated_at": "2026-05-04 08:58:40"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 70,
@@ -1700,7 +1700,7 @@
       "min_annualized": 4.590537804448269,
       "current_avg_psf": 1037.8,
       "rental_yield": null,
-      "updated_at": "2026-05-04 09:01:00"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 71,
@@ -1710,7 +1710,7 @@
       "min_annualized": 9.86497177260015,
       "current_avg_psf": 1101,
       "rental_yield": null,
-      "updated_at": "2026-05-04 09:02:25"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 73,
@@ -1718,9 +1718,9 @@
       "avg_annualized": 5.824996788134926,
       "max_annualized": 13.391553846312277,
       "min_annualized": 0.2811825131065149,
-      "current_avg_psf": 1722.7342657342658,
+      "current_avg_psf": 1758.6697674418604,
       "rental_yield": null,
-      "updated_at": "2026-05-04 05:37:45"
+      "updated_at": "2026-05-05 07:49:00"
     },
     {
       "condo_id": 74,
@@ -1728,9 +1728,9 @@
       "avg_annualized": 10.102976537205658,
       "max_annualized": 13.477759537051037,
       "min_annualized": 7.826607263019758,
-      "current_avg_psf": 1131,
+      "current_avg_psf": 1117.8,
       "rental_yield": null,
-      "updated_at": "2026-05-04 09:21:14"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 75,
@@ -1738,9 +1738,9 @@
       "avg_annualized": 2.112776527294008,
       "max_annualized": 7.291576718955484,
       "min_annualized": -4.411332540140112,
-      "current_avg_psf": 2047.2105263157894,
+      "current_avg_psf": 2131.5,
       "rental_yield": null,
-      "updated_at": "2026-05-04 09:33:06"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 76,
@@ -1748,9 +1748,9 @@
       "avg_annualized": 4.332341676381398,
       "max_annualized": 11.861527837504982,
       "min_annualized": 1.3640765474688177,
-      "current_avg_psf": 2216.7894736842104,
+      "current_avg_psf": 2210.1,
       "rental_yield": null,
-      "updated_at": "2026-05-04 12:08:56"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 77,
@@ -1758,9 +1758,9 @@
       "avg_annualized": 9.806421886529657,
       "max_annualized": 13.80915669790792,
       "min_annualized": 4.728980437361852,
-      "current_avg_psf": 1505.9615384615386,
+      "current_avg_psf": 1535.076923076923,
       "rental_yield": null,
-      "updated_at": "2026-05-04 12:17:40"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 78,
@@ -1770,7 +1770,7 @@
       "min_annualized": 2.382394343503158,
       "current_avg_psf": 2647.75,
       "rental_yield": null,
-      "updated_at": "2026-05-04 12:20:53"
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 79,
@@ -1778,9 +1778,19 @@
       "avg_annualized": 5.046726415813477,
       "max_annualized": 10.04799845497606,
       "min_annualized": 1.238643752698665,
-      "current_avg_psf": 1497.2857142857142,
+      "current_avg_psf": 1534.4545454545455,
       "rental_yield": null,
-      "updated_at": "2026-05-04 12:24:40"
+      "updated_at": "2026-05-05 07:48:59"
+    },
+    {
+      "condo_id": 80,
+      "total_txns": 13,
+      "avg_annualized": 6.779278975938407,
+      "max_annualized": 60.22727272727273,
+      "min_annualized": -2.073646611234592,
+      "current_avg_psf": 1652.4285714285713,
+      "rental_yield": null,
+      "updated_at": "2026-05-05 07:48:59"
     },
     {
       "condo_id": 81,
@@ -1788,9 +1798,9 @@
       "avg_annualized": -4.484201092250173,
       "max_annualized": 3.865007856245528,
       "min_annualized": -14.340240458545905,
-      "current_avg_psf": 2316.6666666666665,
+      "current_avg_psf": 2400,
       "rental_yield": null,
-      "updated_at": "2026-05-04 12:45:35"
+      "updated_at": "2026-05-05 07:48:59"
     }
   ],
   "transactions": [
