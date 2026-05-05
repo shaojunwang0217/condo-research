@@ -1145,19 +1145,6 @@
       "created_at": "2026-05-05 08:17:16"
     },
     {
-      "id": 104,
-      "name": "PHOENIX HEIGHTS",
-      "district": "D23",
-      "area": "Choa Chu Kang",
-      "tenure": "99-year Leasehold",
-      "year_completed": 1997,
-      "total_units": 280,
-      "developer": "City Developments Limited (CDL)",
-      "mrt_station": "Choa Chu Kang MRT",
-      "mrt_distance": "5 min",
-      "created_at": "2026-05-05 08:17:16"
-    },
-    {
       "id": 105,
       "name": "PARC GREENWOOD",
       "district": "D23",
