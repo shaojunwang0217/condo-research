@@ -508,19 +508,6 @@
       "created_at": "2026-05-02 09:40:46"
     },
     {
-      "id": 40,
-      "name": "TREASURE CREST",
-      "district": "D19",
-      "area": "Hougang / Sengkang / Serangoon",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2018,
-      "total_units": 504,
-      "developer": "Sim Lian",
-      "mrt_station": "Sengkang MRT",
-      "mrt_distance": "800m (10 min)",
-      "created_at": "2026-05-02 09:40:46"
-    },
-    {
       "id": 41,
       "name": "HIGH PARK RESIDENCES",
       "district": "D28",
@@ -885,19 +872,6 @@
       "created_at": "2026-05-02 09:40:46"
     },
     {
-      "id": 69,
-      "name": "LOYANG VALLEY",
-      "district": "D17",
-      "area": "Loyang / Changi",
-      "tenure": "99-year Leasehold",
-      "year_completed": 1985,
-      "total_units": 362,
-      "developer": "Loyang Valley",
-      "mrt_station": "Pasir Ris MRT",
-      "mrt_distance": "2.4km (30 min)",
-      "created_at": "2026-05-02 09:40:46"
-    },
-    {
       "id": 70,
       "name": "COASTAL BREEZE RESIDENCES",
       "district": "D17",
@@ -1050,19 +1024,6 @@
       "total_units": 360,
       "developer": "FCL (Far East Organization)",
       "mrt_station": "Tanjong Pagar MRT / Shenton Way MRT",
-      "mrt_distance": "5 min",
-      "created_at": "2026-05-05 07:43:14"
-    },
-    {
-      "id": 83,
-      "name": "ALTEZ",
-      "district": "D02",
-      "area": "Chinatown / Tanjong Pagar",
-      "tenure": "99-year Leasehold",
-      "year_completed": 2017,
-      "total_units": 221,
-      "developer": "Far East Organization",
-      "mrt_station": "Tanjong Pagar MRT",
       "mrt_distance": "5 min",
       "created_at": "2026-05-05 07:43:14"
     },
