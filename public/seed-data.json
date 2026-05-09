@@ -1169,6 +1169,97 @@
       "mrt_station": "Outram Park MRT / Chinatown MRT",
       "mrt_distance": "610m (8 min) to Outram Park, 450m (6 min) to Chinatown",
       "created_at": "2026-05-09 15:01:00"
+    },
+    {
+      "id": 104,
+      "name": "ONE PEARL BANK",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2024,
+      "total_units": 774,
+      "developer": "CapitaLand",
+      "mrt_station": "Outram Park MRT",
+      "mrt_distance": "400m (5 min)",
+      "created_at": "2026-05-09 16:40:00"
+    },
+    {
+      "id": 105,
+      "name": "AVENUE SOUTH RESIDENCE",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2023,
+      "total_units": 1074,
+      "developer": "UOL / UIC / Kheng Leong",
+      "mrt_station": "Tiong Bahru MRT",
+      "mrt_distance": "700m (9 min)",
+      "created_at": "2026-05-09 16:40:00"
+    },
+    {
+      "id": 106,
+      "name": "RIVIERE",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2023,
+      "total_units": 455,
+      "developer": "Frasers Property Limited",
+      "mrt_station": "Havelock MRT / Tiong Bahru MRT",
+      "mrt_distance": "500m (7 min) to Havelock, 900m (11 min) to Tiong Bahru",
+      "created_at": "2026-05-09 16:40:00"
+    },
+    {
+      "id": 107,
+      "name": "MARGARET VILLE",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2021,
+      "total_units": 309,
+      "developer": "MCL Land Limited",
+      "mrt_station": "Commonwealth MRT",
+      "mrt_distance": "500m (7 min)",
+      "created_at": "2026-05-09 16:40:00"
+    },
+    {
+      "id": 108,
+      "name": "HIGHLINE RESIDENCES",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2018,
+      "total_units": 500,
+      "developer": "Keppel Land Limited",
+      "mrt_station": "Tiong Bahru MRT",
+      "mrt_distance": "600m (8 min)",
+      "created_at": "2026-05-09 16:40:00"
+    },
+    {
+      "id": 109,
+      "name": "COMMONWEALTH TOWERS",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2017,
+      "total_units": 845,
+      "developer": "Wealthall Development Pte Ltd (Intrepid / Vickers)",
+      "mrt_station": "Queenstown MRT / Commonwealth MRT",
+      "mrt_distance": "350m (4 min) to Queenstown, 500m (7 min) to Commonwealth",
+      "created_at": "2026-05-09 16:40:00"
+    },
+    {
+      "id": 110,
+      "name": "THE CREST",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2017,
+      "total_units": 469,
+      "developer": "Wingcrown Investment Pte Ltd (Wing Tai / Metro Holdings)",
+      "mrt_station": "Tiong Bahru MRT / Redhill MRT",
+      "mrt_distance": "700m (9 min) to Tiong Bahru, 800m (10 min) to Redhill",
+      "created_at": "2026-05-09 16:40:00"
     }
   ],
   "project_stats": [
@@ -2061,6 +2152,76 @@
       "current_avg_psf": 2422,
       "rental_yield": null,
       "updated_at": "2026-05-09 16:17:00"
+    },
+    {
+      "condo_id": 104,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
+    },
+    {
+      "condo_id": 105,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
+    },
+    {
+      "condo_id": 106,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
+    },
+    {
+      "condo_id": 107,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
+    },
+    {
+      "condo_id": 108,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
+    },
+    {
+      "condo_id": 109,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
+    },
+    {
+      "condo_id": 110,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 16:40:00"
     }
   ],
   "transactions": [
