@@ -1156,6 +1156,19 @@
       "mrt_station": "Bartley MRT",
       "mrt_distance": "420m (5 min)",
       "created_at": "2026-05-09 12:12:00"
+    },
+    {
+      "id": 103,
+      "name": "THE LANDMARK",
+      "district": "D03",
+      "area": "Queenstown / Tiong Bahru",
+      "tenure": "99-year Leasehold",
+      "year_completed": 2025,
+      "total_units": 396,
+      "developer": "Landmark JV Pte Ltd (MCC Land / ZACD Group / SSLE Development)",
+      "mrt_station": "Outram Park MRT / Chinatown MRT",
+      "mrt_distance": "610m (8 min) to Outram Park, 450m (6 min) to Chinatown",
+      "created_at": "2026-05-09 15:01:00"
     }
   ],
   "project_stats": [
@@ -2038,6 +2051,16 @@
       "current_avg_psf": 1177,
       "rental_yield": null,
       "updated_at": "2026-05-09 13:30:00"
+    },
+    {
+      "condo_id": 103,
+      "total_txns": 0,
+      "avg_annualized": null,
+      "max_annualized": null,
+      "min_annualized": null,
+      "current_avg_psf": null,
+      "rental_yield": null,
+      "updated_at": "2026-05-09 15:01:00"
     }
   ],
   "transactions": [
