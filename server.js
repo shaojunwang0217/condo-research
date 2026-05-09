@@ -72,6 +72,47 @@ app.get('/api/areas', (req, res) => {
 });
 
 // Get single condo details with transaction history
+// Reseed from seed-data.json (drops existing data and re-imports)
+app.post('/api/reseed', (req, res) => {
+  const db = getDb();
+  const fs = require('fs');
+  const filePath = path.join(__dirname, 'public', 'seed-data.json');
+  if (!fs.existsSync(filePath)) {
+    return res.status(400).json({ error: 'No seed-data.json found' });
+  }
+  
+  const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  
+  const tx = db.transaction(() => {
+    // Drop existing data
+    db.exec('DELETE FROM transactions');
+    db.exec('DELETE FROM project_stats');
+    db.exec('DELETE FROM condos');
+    
+    // Insert condos
+    const insertCondo = db.prepare('INSERT INTO condos (id, name, district, area, tenure, year_completed, total_units, developer, mrt_station, mrt_distance) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    for (const c of data.condos) {
+      insertCondo.run(c.id, c.name, c.district, c.area, c.tenure, c.year_completed, c.total_units, c.developer, c.mrt_station, c.mrt_distance);
+    }
+    
+    // Insert stats
+    const insertStat = db.prepare('INSERT INTO project_stats (condo_id, total_txns, avg_annualized, max_annualized, min_annualized, current_avg_psf, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)');
+    for (const s of data.project_stats) {
+      insertStat.run(s.condo_id, s.total_txns, s.avg_annualized, s.max_annualized, s.min_annualized, s.current_avg_psf, s.updated_at);
+    }
+    
+    // Insert transactions
+    const insertTxn = db.prepare('INSERT INTO transactions (id, condo_id, buy_date, sell_date, buy_price, sell_price, size_sqft, unit_type, floor_level, annualized_return, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)');
+    for (const t of data.transactions) {
+      insertTxn.run(t.id, t.condo_id, t.buy_date, t.sell_date, t.buy_price, t.sell_price, t.size_sqft, t.unit_type, t.floor_level, t.annualized_return, t.created_at);
+    }
+  });
+  
+  tx();
+  console.log(`Reseeded: ${data.condos.length} condos, ${data.transactions.length} txns`);
+  res.json({ success: true, condos: data.condos.length, transactions: data.transactions.length });
+});
+
 app.get('/api/condos/:id', (req, res) => {
   const db = getDb();
   const condo = db.prepare(`
