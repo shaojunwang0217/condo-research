@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    container_name: condo-research
+    restart: unless-stopped
+    ports:
+      - "3456:3456"
+    volumes:
+      # Persistent SQLite data — survives redeploys
+      - condo_data:/data
+    environment:
+      - PORT=3456
+      - DB_PATH=/data/condo.db
+      - NODE_ENV=production
+
+volumes:
+  condo_data:
+    driver: local
