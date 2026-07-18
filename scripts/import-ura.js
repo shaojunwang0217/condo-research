@@ -22,9 +22,18 @@ const path = require('path');
 const ACCESS_KEY = process.env.URA_ACCESS_KEY;
 const MODE = process.env.URA_MODE || 'condos-only';
 const OUTPUT = process.env.URA_OUTPUT || path.join(__dirname, '..', 'public', 'seed-data.json');
-const EXISTING = process.env.URA_EXISTING || OUTPUT;
+const EXISTING = process.env.URA_EXISTING || path.join(__dirname, '..', 'public', 'seed-data.json');
 
 const BASE_URL = 'https://eservice.ura.gov.sg/uraDataService';
+
+// Property types considered "condo-like" for this app. URA includes landed
+// properties (Detached, Semi-detached, Terrace) in the same dataset; we
+// exclude them by default unless you want every private residential project.
+const CONDO_LIKE_TYPES = new Set([
+  'Condominium',
+  'Apartment',
+  'Executive Condominium'
+]);
 
 // Rough district -> area mapping. URA only gives district numbers, so this
 // table is used to populate the human-readable area field.
@@ -181,44 +190,64 @@ async function main() {
 
   for (const project of projects) {
     const projectName = project.project.trim().toUpperCase();
-    const district = `D${project.district.padStart(2, '0')}`;
-    const key = buildCondoKey(projectName, district);
+    const rawTransactions = project.transaction || [];
+    if (rawTransactions.length === 0) continue;
 
-    // Only add condos that are not already in the database.
-    if (existingMap.has(key)) continue;
+    // Only keep projects that have at least one condo-like transaction.
+    const condoLikeTxns = rawTransactions.filter(t =>
+      CONDO_LIKE_TYPES.has(t.propertyType)
+    );
+    if (condoLikeTxns.length === 0) continue;
 
-    let condo = projectGroups.get(key)?.condo;
-    if (!condo) {
-      const pipe = pipelineMap.get(key);
-      const firstTxn = (project.transaction || [])[0];
-      const tenureInfo = parseTenure(project.tenure || (firstTxn && firstTxn.tenure));
-      const topYear =
-        (pipe && pipe.expectedTOPYear && pipe.expectedTOPYear !== 'na' && parseInt(pipe.expectedTOPYear, 10)) ||
-        tenureInfo.year ||
-        null;
-
-      condo = {
-        id: nextCondoId++,
-        name: projectName,
-        district,
-        area: DISTRICT_AREA[project.district] || 'Unknown',
-        tenure: tenureInfo.tenure,
-        year_completed: topYear,
-        total_units: pipe && pipe.totalUnits ? parseInt(pipe.totalUnits, 10) : null,
-        developer: pipe && pipe.developerName ? pipe.developerName : null,
-        mrt_station: null,
-        mrt_distance: null,
-        created_at: nowString()
-      };
-
-      newCondos.push(condo);
-      existingMap.set(key, condo);
-      projectGroups.set(key, { condo, transactions: [] });
+    // Group transactions by district (the project object itself does not have a
+    // district field; the district lives on each transaction record).
+    const byDistrict = new Map();
+    for (const t of condoLikeTxns) {
+      const district = `D${String(t.district).padStart(2, '0')}`;
+      if (!byDistrict.has(district)) {
+        byDistrict.set(district, { transactions: [], tenure: t.tenure, area: t.area });
+      }
+      byDistrict.get(district).transactions.push(t);
     }
 
-    const pg = projectGroups.get(key);
-    for (const t of project.transaction || []) {
-      pg.transactions.push(t);
+    for (const [district, info] of byDistrict) {
+      const key = buildCondoKey(projectName, district);
+
+      // Only add condos that are not already in the database.
+      if (existingMap.has(key)) continue;
+
+      let condo = projectGroups.get(key)?.condo;
+      if (!condo) {
+        const pipe = pipelineMap.get(key);
+        const tenureInfo = parseTenure(project.tenure || info.tenure || info.transactions[0]?.tenure);
+        const topYear =
+          (pipe && pipe.expectedTOPYear && pipe.expectedTOPYear !== 'na' && parseInt(pipe.expectedTOPYear, 10)) ||
+          tenureInfo.year ||
+          null;
+
+        condo = {
+          id: nextCondoId++,
+          name: projectName,
+          district,
+          area: DISTRICT_AREA[district.replace('D', '')] || 'Unknown',
+          tenure: tenureInfo.tenure,
+          year_completed: topYear,
+          total_units: pipe && pipe.totalUnits ? parseInt(pipe.totalUnits, 10) : null,
+          developer: pipe && pipe.developerName ? pipe.developerName : null,
+          mrt_station: null,
+          mrt_distance: null,
+          created_at: nowString()
+        };
+
+        newCondos.push(condo);
+        existingMap.set(key, condo);
+        projectGroups.set(key, { condo, transactions: [] });
+      }
+
+      const pg = projectGroups.get(key);
+      for (const t of info.transactions) {
+        pg.transactions.push(t);
+      }
     }
   }
 
