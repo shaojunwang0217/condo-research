@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "import:ura": "node scripts/import-ura.js"
   },
   "keywords": [],
   "author": "",
