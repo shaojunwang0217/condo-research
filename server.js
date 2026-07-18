@@ -15,14 +15,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Get all condos with aggregated stats
-app.get('/api/condos', (req, res) => {
-  const db = getDb();
-  const { district, area, sortBy, sortDir, search, minTxn } = req.query;
-
+function buildCondosWhere(req) {
+  const { district, area, search, minTxn } = req.query;
   let sql = `
-    SELECT c.id, c.name, c.district, c.area, c.tenure, c.year_completed, c.total_units,
-           c.developer, c.mrt_station, c.mrt_distance,
-           ps.total_txns, ps.avg_annualized, ps.max_annualized, ps.min_annualized, ps.current_avg_psf
     FROM condos c
     LEFT JOIN project_stats ps ON c.id = ps.condo_id
     WHERE 1=1
@@ -46,15 +41,67 @@ app.get('/api/condos', (req, res) => {
     params.push(parseInt(minTxn));
   }
 
-  // Default sort by annualized return descending
+  return { sql, params };
+}
+
+app.get('/api/condos', (req, res) => {
+  const db = getDb();
+  const { sortBy, sortDir } = req.query;
+  const { sql: whereSql, params } = buildCondosWhere(req);
+
   const validSorts = ['avg_annualized', 'total_txns', 'name', 'current_avg_psf', 'year_completed', 'district'];
   const sort = validSorts.includes(sortBy) ? sortBy : 'avg_annualized';
   const dir = sortDir === 'asc' ? 'ASC' : 'DESC';
   const sortTable = ['name', 'year_completed', 'district'].includes(sort) ? 'c' : 'ps';
-  sql += ` ORDER BY ${sortTable}.${sort} ${dir} NULLS LAST`;
+  const orderSql = ` ORDER BY ${sortTable}.${sort} ${dir} NULLS LAST`;
 
-  const rows = db.prepare(sql).all(...params);
-  res.json(rows);
+  const selectCols = `
+    c.id, c.name, c.district, c.area, c.tenure, c.year_completed, c.total_units,
+    c.developer, c.mrt_station, c.mrt_distance,
+    ps.total_txns, ps.avg_annualized, ps.max_annualized, ps.min_annualized, ps.current_avg_psf
+  `;
+
+  const page = parseInt(req.query.page, 10) || 0;
+  const limit = parseInt(req.query.limit, 10) || 0;
+
+  // Backwards-compatible: if no pagination requested, return full array
+  if (page <= 0 || limit <= 0) {
+    const rows = db.prepare(`SELECT ${selectCols} ${whereSql} ${orderSql}`).all(...params);
+    return res.json(rows);
+  }
+
+  const countRow = db.prepare(`SELECT COUNT(*) as total ${whereSql}`).get(...params);
+  const total = countRow.total;
+  const pages = Math.ceil(total / limit) || 1;
+  const offset = (page - 1) * limit;
+
+  const rows = db.prepare(`SELECT ${selectCols} ${whereSql} ${orderSql} LIMIT ? OFFSET ?`).all(...params, limit, offset);
+
+  const summaryRow = db.prepare(`
+    SELECT COUNT(*) as count, AVG(ps.avg_annualized) as avg_return, SUM(ps.total_txns) as total_txns
+    ${whereSql}
+  `).get(...params);
+
+  const topRow = db.prepare(`
+    SELECT c.name, ps.avg_annualized
+    ${whereSql}
+    ORDER BY ps.avg_annualized DESC NULLS LAST
+    LIMIT 1
+  `).get(...params);
+
+  res.json({
+    condos: rows,
+    total,
+    page,
+    limit,
+    pages,
+    summary: {
+      count: summaryRow.count,
+      avg_return: summaryRow.avg_return,
+      total_txns: summaryRow.total_txns,
+      top_performer: topRow || null
+    }
+  });
 });
 
 // Get districts

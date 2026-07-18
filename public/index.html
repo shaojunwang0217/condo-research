@@ -36,6 +36,40 @@
   .badge.red { background: rgba(248, 113, 113, 0.15); color: var(--red); }
   .badge.blue { background: rgba(56, 189, 248, 0.15); color: var(--accent); }
   .loading { text-align: center; padding: 60px; color: var(--text2); }
+  .btn-reset {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .btn-reset:hover { background: var(--surface); border-color: var(--accent); color: var(--accent); }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .page-btn {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    min-width: 34px;
+  }
+  .page-btn:hover:not(:disabled) { background: var(--surface2); border-color: var(--accent); }
+  .page-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  .page-btn.active { background: var(--accent); color: #0f172a; border-color: var(--accent); font-weight: 600; }
+  .showing { text-align: center; color: var(--text2); font-size: 12px; margin-top: 12px; }
+  .error-toast { position: fixed; bottom: 16px; right: 16px; background: var(--red); color: white; padding: 12px 16px; border-radius: 8px; font-size: 13px; z-index: 100; display: none; }
 
   /* Detail panel */
   .detail-panel { display: none; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 20px; }
@@ -112,6 +146,7 @@
     <select id="areaFilter"><option value="">All Areas</option></select>
     <input type="text" id="searchFilter" placeholder="Search condo name..." />
     <select id="minTxnFilter"><option value="0">Min txns: Any</option><option value="2">≥ 2</option><option value="5">≥ 5</option><option value="10">≥ 10</option><option value="20">≥ 20</option></select>
+    <button class="btn-reset" id="resetBtn" onclick="resetFilters()">Reset</button>
   </div>
 </div>
 
@@ -149,12 +184,28 @@
       <tbody id="tableBody"></tbody>
     </table>
   </div>
+  <div class="showing" id="showingInfo"></div>
+  <div class="pagination" id="pagination"></div>
 </div>
 
 <script>
+const DEFAULT_SORT = 'avg_annualized';
+const DEFAULT_DIR = 'desc';
+const DEFAULT_LIMIT = 25;
+
+const state = {
+  page: 1,
+  limit: DEFAULT_LIMIT,
+  currentSort: DEFAULT_SORT,
+  currentDir: DEFAULT_DIR,
+  district: '',
+  area: '',
+  search: '',
+  minTxn: '0'
+};
+
 let allCondos = [];
-let currentSort = 'avg_annualized';
-let currentDir = 'desc';
+let pageMeta = { total: 0, pages: 1 };
 let chartInstance = null;
 
 function formatSGD(n) {
@@ -162,6 +213,7 @@ function formatSGD(n) {
 }
 
 function retBadge(val) {
+  if (val == null) return '—';
   if (val >= 8) return `<span class="badge green">${val.toFixed(1)}%</span>`;
   if (val >= 5) return `<span class="badge yellow">${val.toFixed(1)}%</span>`;
   return `<span class="badge red">${val.toFixed(1)}%</span>`;
@@ -187,39 +239,106 @@ function retBar(val) {
   return `<div class="return-bar"><div class="fill" style="width:${pct}%;background:${color}"></div></div>`;
 }
 
+function init() {
+  const params = new URLSearchParams(window.location.search);
+  state.page = parseInt(params.get('page')) || 1;
+  state.limit = parseInt(params.get('limit')) || DEFAULT_LIMIT;
+  state.currentSort = params.get('sortBy') || DEFAULT_SORT;
+  state.currentDir = params.get('sortDir') === 'asc' ? 'asc' : DEFAULT_DIR;
+  state.district = params.get('district') || '';
+  state.area = params.get('area') || '';
+  state.search = params.get('search') || '';
+  state.minTxn = params.get('minTxn') || '0';
+
+  document.getElementById('districtFilter').value = state.district;
+  document.getElementById('areaFilter').value = state.area;
+  document.getElementById('searchFilter').value = state.search;
+  document.getElementById('minTxnFilter').value = state.minTxn;
+
+  updateSortIcons();
+  loadDistricts();
+  loadAreas();
+  loadCondos();
+}
+
+function updateURL() {
+  const params = new URLSearchParams();
+  if (state.page > 1) params.set('page', state.page);
+  if (state.limit !== DEFAULT_LIMIT) params.set('limit', state.limit);
+  if (state.currentSort !== DEFAULT_SORT) params.set('sortBy', state.currentSort);
+  if (state.currentDir !== DEFAULT_DIR) params.set('sortDir', state.currentDir);
+  if (state.district) params.set('district', state.district);
+  if (state.area) params.set('area', state.area);
+  if (state.search) params.set('search', state.search);
+  if (state.minTxn && state.minTxn !== '0') params.set('minTxn', state.minTxn);
+
+  const qs = params.toString();
+  const url = qs ? '?' + qs : window.location.pathname;
+  window.history.replaceState(null, '', url);
+}
+
+function updateSortIcons() {
+  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '▽');
+  const icon = document.getElementById('s-' + state.currentSort);
+  if (icon) icon.textContent = state.currentDir === 'desc' ? '▽' : '△';
+}
+
 async function loadDistricts() {
-  const res = await fetch('/api/districts');
-  const districts = await res.json();
-  const sel = document.getElementById('districtFilter');
-  districts.forEach(d => { sel.innerHTML += `<option value="${d}">${d}</option>`; });
+  try {
+    const res = await fetch('/api/districts');
+    if (!res.ok) throw new Error('Failed to load districts');
+    const districts = await res.json();
+    const sel = document.getElementById('districtFilter');
+    const current = sel.value;
+    sel.innerHTML = '<option value="">All Districts</option>' + districts.map(d => `<option value="${d}">${d}</option>`).join('');
+    sel.value = current;
+  } catch (err) {
+    console.error('Districts load failed:', err);
+  }
 }
 
 async function loadAreas() {
-  const res = await fetch('/api/areas');
-  const areas = await res.json();
-  const sel = document.getElementById('areaFilter');
-  areas.forEach(a => { sel.innerHTML += `<option value="${a}">${a}</option>`; });
+  try {
+    const res = await fetch('/api/areas');
+    if (!res.ok) throw new Error('Failed to load areas');
+    const areas = await res.json();
+    const sel = document.getElementById('areaFilter');
+    const current = sel.value;
+    sel.innerHTML = '<option value="">All Areas</option>' + areas.map(a => `<option value="${a}">${a}</option>`).join('');
+    sel.value = current;
+  } catch (err) {
+    console.error('Areas load failed:', err);
+  }
 }
 
 async function loadCondos() {
   const params = new URLSearchParams();
-  const d = document.getElementById('districtFilter').value;
-  const a = document.getElementById('areaFilter').value;
-  const s = document.getElementById('searchFilter').value;
-  const m = document.getElementById('minTxnFilter').value;
-  if (d) params.set('district', d);
-  if (a) params.set('area', a);
-  if (s) params.set('search', s);
-  if (m && m !== '0') params.set('minTxn', m);
-  params.set('sortBy', currentSort);
-  params.set('sortDir', currentDir);
+  params.set('page', state.page);
+  params.set('limit', state.limit);
+  params.set('sortBy', state.currentSort);
+  params.set('sortDir', state.currentDir);
+  if (state.district) params.set('district', state.district);
+  if (state.area) params.set('area', state.area);
+  if (state.search) params.set('search', state.search);
+  if (state.minTxn && state.minTxn !== '0') params.set('minTxn', state.minTxn);
 
   document.getElementById('tableBody').innerHTML = '<tr><td colspan="8" class="loading">Loading...</td></tr>';
+  document.getElementById('pagination').innerHTML = '';
+  document.getElementById('showingInfo').textContent = '';
 
-  const res = await fetch('/api/condos?' + params);
-  allCondos = await res.json();
-  renderTable();
-  updateStats();
+  try {
+    const res = await fetch('/api/condos?' + params);
+    if (!res.ok) throw new Error(`Server returned ${res.status}`);
+    const data = await res.json();
+    allCondos = data.condos || [];
+    pageMeta = { total: data.total || 0, pages: data.pages || 1 };
+    renderTable();
+    updateStats(data.summary || null);
+    renderPagination();
+    renderShowing();
+  } catch (err) {
+    document.getElementById('tableBody').innerHTML = `<tr><td colspan="8" class="loading" style="color:var(--red)">Error loading condos: ${err.message}</td></tr>`;
+  }
 }
 
 function renderTable() {
@@ -242,25 +361,96 @@ function renderTable() {
   `).join('');
 }
 
-function updateStats() {
-  if (allCondos.length === 0) { document.getElementById('statsBar').innerHTML = ''; return; }
-  const avgAll = allCondos.reduce((s, c) => s + (c.avg_annualized || 0), 0) / allCondos.length;
-  const best = allCondos.reduce((b, c) => (c.avg_annualized || 0) > (b.avg_annualized || 0) ? c : b, allCondos[0]);
-  const totalTxns = allCondos.reduce((s, c) => s + (c.total_txns || 0), 0);
-  document.getElementById('statsBar').innerHTML = `
-    <div class="stat-card"><div class="label">Condos</div><div class="value">${allCondos.length}</div></div>
-    <div class="stat-card"><div class="label">Avg Return</div><div class="value green">${avgAll.toFixed(1)}%</div></div>
-    <div class="stat-card"><div class="label">Top Performer</div><div class="value" style="font-size:16px">${best.name}<span style="color:var(--green);font-size:14px;margin-left:6px">${best.avg_annualized?.toFixed(1)}%</span></div></div>
-    <div class="stat-card"><div class="label">Total Txns</div><div class="value">${totalTxns}</div></div>
+function updateStats(summary) {
+  const bar = document.getElementById('statsBar');
+  if (!summary || summary.count === 0) {
+    bar.innerHTML = '';
+    return;
+  }
+  const avg = summary.avg_return != null ? summary.avg_return.toFixed(1) : '0.0';
+  const top = summary.top_performer || { name: '—', avg_annualized: null };
+  bar.innerHTML = `
+    <div class="stat-card"><div class="label">Condos</div><div class="value">${summary.count}</div></div>
+    <div class="stat-card"><div class="label">Avg Return</div><div class="value green">${avg}%</div></div>
+    <div class="stat-card"><div class="label">Top Performer</div><div class="value" style="font-size:16px">${top.name}<span style="color:var(--green);font-size:14px;margin-left:6px">${top.avg_annualized != null ? top.avg_annualized.toFixed(1) + '%' : '—'}</span></div></div>
+    <div class="stat-card"><div class="label">Total Txns</div><div class="value">${summary.total_txns || 0}</div></div>
   `;
 }
 
+function renderPagination() {
+  const wrap = document.getElementById('pagination');
+  if (pageMeta.pages <= 1) {
+    wrap.innerHTML = '';
+    return;
+  }
+
+  const maxButtons = 7;
+  let start = Math.max(1, state.page - Math.floor(maxButtons / 2));
+  let end = Math.min(pageMeta.pages, start + maxButtons - 1);
+  if (end - start + 1 < maxButtons) {
+    start = Math.max(1, end - maxButtons + 1);
+  }
+
+  let html = `<button class="page-btn" onclick="goToPage(${state.page - 1})" ${state.page === 1 ? 'disabled' : ''}>←</button>`;
+  if (start > 1) html += `<button class="page-btn" onclick="goToPage(1)">1</button>${start > 2 ? '<span style="color:var(--text2);padding:0 4px">…</span>' : ''}`;
+  for (let i = start; i <= end; i++) {
+    html += `<button class="page-btn ${i === state.page ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+  }
+  if (end < pageMeta.pages) html += `${end < pageMeta.pages - 1 ? '<span style="color:var(--text2);padding:0 4px">…</span>' : ''}<button class="page-btn" onclick="goToPage(${pageMeta.pages})">${pageMeta.pages}</button>`;
+  html += `<button class="page-btn" onclick="goToPage(${state.page + 1})" ${state.page === pageMeta.pages ? 'disabled' : ''}>→</button>`;
+
+  wrap.innerHTML = html;
+}
+
+function renderShowing() {
+  const total = pageMeta.total || 0;
+  if (total === 0) {
+    document.getElementById('showingInfo').textContent = '';
+    return;
+  }
+  const start = (state.page - 1) * state.limit + 1;
+  const end = Math.min(start + state.limit - 1, total);
+  document.getElementById('showingInfo').textContent = `Showing ${start}–${end} of ${total} condos`;
+}
+
 function sortBy(col) {
-  if (currentSort === col) currentDir = currentDir === 'desc' ? 'asc' : 'desc';
-  else { currentSort = col; currentDir = 'desc'; }
-  document.querySelectorAll('.sort-icon').forEach(el => el.textContent = '▽');
-  const icon = document.getElementById('s-' + col);
-  if (icon) icon.textContent = currentDir === 'desc' ? '▽' : '△';
+  if (state.currentSort === col) {
+    state.currentDir = state.currentDir === 'desc' ? 'asc' : 'desc';
+  } else {
+    state.currentSort = col;
+    state.currentDir = 'desc';
+  }
+  state.page = 1;
+  updateSortIcons();
+  updateURL();
+  loadCondos();
+}
+
+function goToPage(p) {
+  if (p < 1 || p > pageMeta.pages || p === state.page) return;
+  state.page = p;
+  updateURL();
+  loadCondos();
+  document.querySelector('.content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function resetFilters() {
+  state.page = 1;
+  state.limit = DEFAULT_LIMIT;
+  state.currentSort = DEFAULT_SORT;
+  state.currentDir = DEFAULT_DIR;
+  state.district = '';
+  state.area = '';
+  state.search = '';
+  state.minTxn = '0';
+
+  document.getElementById('districtFilter').value = '';
+  document.getElementById('areaFilter').value = '';
+  document.getElementById('searchFilter').value = '';
+  document.getElementById('minTxnFilter').value = '0';
+
+  updateSortIcons();
+  updateURL();
   loadCondos();
 }
 
@@ -268,46 +458,58 @@ async function openDetail(id) {
   const panel = document.getElementById('detailPanel');
   panel.classList.add('open');
   document.getElementById('detailName').textContent = 'Loading...';
+  document.getElementById('detailMeta').textContent = '';
+  document.getElementById('detailStats').innerHTML = '';
+  document.getElementById('txnBody').innerHTML = '';
 
-  const res = await fetch(`/api/condos/${id}`);
-  const data = await res.json();
+  try {
+    const res = await fetch(`/api/condos/${id}`);
+    if (!res.ok) throw new Error('Failed to load condo details');
+    const data = await res.json();
 
-  document.getElementById('detailName').textContent = data.name;
-  document.getElementById('detailMeta').textContent = `${data.district} · ${data.area} · ${data.year_completed || '—'} · ${data.tenure}`;
+    document.getElementById('detailName').textContent = data.name;
+    document.getElementById('detailMeta').textContent = `${data.district} · ${data.area} · ${data.year_completed || '—'} · ${data.tenure}`;
 
-  document.getElementById('detailStats').innerHTML = `
-    <div class="detail-stat"><div class="lbl">Avg Return</div><div class="val" style="color:${data.avg_annualized >= 8 ? 'var(--green)' : data.avg_annualized >= 5 ? 'var(--yellow)' : 'var(--red)'}">${data.avg_annualized?.toFixed(1) || '—'}%</div></div>
-    <div class="detail-stat"><div class="lbl">Max Return</div><div class="val" style="color:var(--green)">${data.max_annualized?.toFixed(1) || '—'}%</div></div>
-    <div class="detail-stat"><div class="lbl">Min Return</div><div class="val" style="color:var(--red)">${data.min_annualized?.toFixed(1) || '—'}%</div></div>
-    <div class="detail-stat"><div class="lbl">Transactions</div><div class="val">${data.total_txns || 0}</div></div>
-    <div class="detail-stat"><div class="lbl">Avg PSF</div><div class="val" style="color:${data.current_avg_psf < 1350 ? 'var(--green)' : data.current_avg_psf < 1525 ? 'var(--yellow)' : 'var(--red)'};font-weight:700">${data.current_avg_psf ? 'S$' + Math.round(data.current_avg_psf).toLocaleString() : '—'}</div></div>
-    <div class="detail-stat"><div class="lbl">Total Units</div><div class="val">${data.total_units || '—'}</div></div>
-    <div class="detail-stat"><div class="lbl">MRT</div><div class="val" style="font-size:13px">${data.mrt_station || '—'}</div></div>
-    <div class="detail-stat"><div class="lbl">Developer</div><div class="val" style="font-size:13px">${data.developer || '—'}</div></div>
-  `;
+    document.getElementById('detailStats').innerHTML = `
+      <div class="detail-stat"><div class="lbl">Avg Return</div><div class="val" style="color:${data.avg_annualized >= 8 ? 'var(--green)' : data.avg_annualized >= 5 ? 'var(--yellow)' : 'var(--red)'}">${data.avg_annualized?.toFixed(1) || '—'}%</div></div>
+      <div class="detail-stat"><div class="lbl">Max Return</div><div class="val" style="color:var(--green)">${data.max_annualized?.toFixed(1) || '—'}%</div></div>
+      <div class="detail-stat"><div class="lbl">Min Return</div><div class="val" style="color:var(--red)">${data.min_annualized?.toFixed(1) || '—'}%</div></div>
+      <div class="detail-stat"><div class="lbl">Transactions</div><div class="val">${data.total_txns || 0}</div></div>
+      <div class="detail-stat"><div class="lbl">Avg PSF</div><div class="val" style="color:${data.current_avg_psf < 1350 ? 'var(--green)' : data.current_avg_psf < 1525 ? 'var(--yellow)' : 'var(--red)'};font-weight:700">${data.current_avg_psf ? 'S$' + Math.round(data.current_avg_psf).toLocaleString() : '—'}</div></div>
+      <div class="detail-stat"><div class="lbl">Total Units</div><div class="val">${data.total_units || '—'}</div></div>
+      <div class="detail-stat"><div class="lbl">MRT</div><div class="val" style="font-size:13px">${data.mrt_station || '—'}</div></div>
+      <div class="detail-stat"><div class="lbl">Developer</div><div class="val" style="font-size:13px">${data.developer || '—'}</div></div>
+    `;
 
-  // Transaction table
-  const tbody = document.getElementById('txnBody');
-  tbody.innerHTML = data.transactions.map(t => {
-    const buyPsf = t.buy_price / t.size_sqft;
-    const sellPsf = t.sell_price / t.size_sqft;
-    const holdYears = (new Date(t.sell_date) - new Date(t.buy_date)) / (365.25 * 24 * 60 * 60 * 1000);
-    return `<tr>
-      <td>${t.buy_date}</td><td>${t.sell_date}</td>
-      <td>${holdYears.toFixed(1)}</td>
-      <td>${formatSGD(t.buy_price)}</td>
-      <td>${formatSGD(t.sell_price)}</td>
-      <td>${t.size_sqft} sqft</td>
-      <td>S$${Math.round(buyPsf).toLocaleString()}</td>
-      <td>S$${Math.round(sellPsf).toLocaleString()}</td>
-      <td>${retBadge(t.annualized_return || 0)}</td>
-    </tr>`;
-  }).join('');
+    const tbody = document.getElementById('txnBody');
+    if (!data.transactions || data.transactions.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="9" class="loading">No transactions recorded.</td></tr>';
+    } else {
+      tbody.innerHTML = data.transactions.map(t => {
+        const buyPsf = t.buy_price / t.size_sqft;
+        const sellPsf = t.sell_price / t.size_sqft;
+        const holdYears = (new Date(t.sell_date) - new Date(t.buy_date)) / (365.25 * 24 * 60 * 60 * 1000);
+        return `<tr>
+          <td>${t.buy_date}</td><td>${t.sell_date}</td>
+          <td>${holdYears.toFixed(1)}</td>
+          <td>${formatSGD(t.buy_price)}</td>
+          <td>${formatSGD(t.sell_price)}</td>
+          <td>${t.size_sqft} sqft</td>
+          <td>S$${Math.round(buyPsf).toLocaleString()}</td>
+          <td>S$${Math.round(sellPsf).toLocaleString()}</td>
+          <td>${retBadge(t.annualized_return)}</td>
+        </tr>`;
+      }).join('');
+    }
 
-  // Chart
-  renderChart(data.transactions, data.name);
-
-  panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    renderChart(data.transactions || [], data.name);
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } catch (err) {
+    document.getElementById('detailName').textContent = 'Error';
+    document.getElementById('detailMeta').textContent = err.message;
+    document.getElementById('detailStats').innerHTML = '';
+    document.getElementById('txnBody').innerHTML = '';
+  }
 }
 
 function closeDetail() {
@@ -362,14 +564,12 @@ function renderChart(txns, condoName) {
   const sorted = [...txns].sort((a, b) => new Date(a.sell_date) - new Date(b.sell_date));
   const hasTrend = sorted.length >= 3;
 
-  // Compute numeric x values (days since first sell date)
   const firstDateMs = sorted.length > 0 ? new Date(sorted[0].sell_date).getTime() : 0;
   const pts = sorted.map(t => ({
     x: (new Date(t.sell_date).getTime() - firstDateMs) / (1000 * 60 * 60 * 24),
     y: +(t.annualized_return || 0).toFixed(2)
   }));
 
-  // Polynomial trendline
   let trendPts = [];
   if (hasTrend) {
     const xs = pts.map(p => p.x);
@@ -445,7 +645,6 @@ function renderChart(txns, condoName) {
             color: '#94a3b8',
             font: { size: 9 },
             callback: function(val) {
-              // Find closest transaction by sell_date
               for (let i = 0; i < pts.length; i++) {
                 const d = pts[i].x;
                 if (Math.abs(d - val) < 2 || (i < pts.length - 1 && val >= d && val < pts[i+1].x)) {
@@ -463,18 +662,22 @@ function renderChart(txns, condoName) {
 }
 
 // Event listeners
-document.getElementById('districtFilter').addEventListener('change', loadCondos);
-document.getElementById('areaFilter').addEventListener('change', loadCondos);
+document.getElementById('districtFilter').addEventListener('change', e => { state.district = e.target.value; state.page = 1; updateURL(); loadCondos(); });
+document.getElementById('areaFilter').addEventListener('change', e => { state.area = e.target.value; state.page = 1; updateURL(); loadCondos(); });
 document.getElementById('searchFilter').addEventListener('input', () => {
   clearTimeout(window._searchTimer);
-  window._searchTimer = setTimeout(loadCondos, 300);
+  window._searchTimer = setTimeout(() => {
+    state.search = document.getElementById('searchFilter').value;
+    state.page = 1;
+    updateURL();
+    loadCondos();
+  }, 300);
 });
-document.getElementById('minTxnFilter').addEventListener('change', loadCondos);
+document.getElementById('minTxnFilter').addEventListener('change', e => { state.minTxn = e.target.value; state.page = 1; updateURL(); loadCondos(); });
 
-// Init
-loadDistricts();
-loadAreas();
-loadCondos();
+window.addEventListener('popstate', init);
+
+init();
 </script>
 </body>
 </html>
