@@ -121,7 +121,8 @@ function parseContractDate(mmyy) {
 
 function computeAnnualizedReturn(buyPrice, sellPrice, years) {
   if (years <= 0 || buyPrice <= 0) return null;
-  return Math.pow(sellPrice / buyPrice, 1 / years) - 1;
+  // Stored as percentage to match the existing curated data format.
+  return (Math.pow(sellPrice / buyPrice, 1 / years) - 1) * 100;
 }
 
 function sqmToSqft(sqm) {
