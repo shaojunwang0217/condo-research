@@ -43,6 +43,7 @@ function initSchema() {
       unit_type TEXT,
       floor_level TEXT,
       annualized_return REAL,
+      source TEXT DEFAULT 'verified',
       created_at TEXT DEFAULT (datetime('now')),
       FOREIGN KEY (condo_id) REFERENCES condos(id)
     );
@@ -63,6 +64,13 @@ function initSchema() {
     CREATE INDEX IF NOT EXISTS idx_condo_district ON condos(district);
     CREATE INDEX IF NOT EXISTS idx_condo_area ON condos(area);
   `);
+
+  // Lightweight migrations for existing databases
+  try {
+    db.exec(`ALTER TABLE transactions ADD COLUMN source TEXT DEFAULT 'verified'`);
+  } catch (e) {
+    // Column already exists; ignore.
+  }
 }
 
 module.exports = { getDb };

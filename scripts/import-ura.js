@@ -161,6 +161,26 @@ async function main() {
 
   const existingMap = new Map(existingData.condos.map(c => [existingKey(c), c]));
 
+  // Split existing data into verified (curated) and previously inferred.
+  // URA-inferred transactions are regenerated on each run, so we drop the old
+  // ones and keep the verified ones. This keeps the output idempotent.
+  const verifiedTransactions = existingData.transactions.filter(t => t.source !== 'URA-inferred');
+  const verifiedCondoIds = new Set(verifiedTransactions.map(t => t.condo_id));
+  const inferredOnlyCondoIds = new Set(
+    existingData.transactions
+      .filter(t => t.source === 'URA-inferred' && !verifiedCondoIds.has(t.condo_id))
+      .map(t => t.condo_id)
+  );
+  const verifiedStats = existingData.project_stats.filter(s => !inferredOnlyCondoIds.has(s.condo_id));
+
+  // Track which existing condos already have curated transactions. We will only
+  // generate URA-inferred transactions for condos that have no verified data,
+  // to avoid mixing verified records with algorithmic estimates.
+  const existingTxnCounts = new Map();
+  for (const t of verifiedTransactions) {
+    existingTxnCounts.set(t.condo_id, (existingTxnCounts.get(t.condo_id) || 0) + 1);
+  }
+
   console.log('Requesting URA token...');
   const token = await getToken(ACCESS_KEY);
   console.log('Token obtained.');
@@ -212,11 +232,9 @@ async function main() {
 
     for (const [district, info] of byDistrict) {
       const key = buildCondoKey(projectName, district);
+      let condo = existingMap.get(key);
 
-      // Only add condos that are not already in the database.
-      if (existingMap.has(key)) continue;
-
-      let condo = projectGroups.get(key)?.condo;
+      // Create a new condo record if this project+district is not already known.
       if (!condo) {
         const pipe = pipelineMap.get(key);
         const tenureInfo = parseTenure(project.tenure || info.tenure || info.transactions[0]?.tenure);
@@ -241,12 +259,17 @@ async function main() {
 
         newCondos.push(condo);
         existingMap.set(key, condo);
-        projectGroups.set(key, { condo, transactions: [] });
       }
 
-      const pg = projectGroups.get(key);
-      for (const t of info.transactions) {
-        pg.transactions.push(t);
+      // Only generate URA-inferred transactions for condos that have no
+      // existing verified transactions. This keeps manually curated data
+      // separate from algorithmic estimates.
+      if (!existingTxnCounts.has(condo.id)) {
+        if (!projectGroups.has(key)) projectGroups.set(key, { condo, transactions: [] });
+        const pg = projectGroups.get(key);
+        for (const t of info.transactions) {
+          pg.transactions.push(t);
+        }
       }
     }
   }
@@ -277,6 +300,11 @@ async function main() {
 
           const buyPrice = parseFloat(buy.price);
           const sellPrice = parseFloat(sell.price);
+
+          // Skip bulk/multiple-unit transactions and very short hold periods.
+          if (parseInt(buy.noOfUnits, 10) > 1 || parseInt(sell.noOfUnits, 10) > 1) continue;
+          if (holdYears < 1.0) continue;
+
           const annReturn = computeAnnualizedReturn(buyPrice, sellPrice, holdYears);
           if (annReturn === null) continue;
 
@@ -292,6 +320,7 @@ async function main() {
             unit_type: unitTypeFromArea(sizeSqft),
             floor_level: buy.floorRange,
             annualized_return: annReturn,
+            source: 'URA-inferred',
             created_at: nowString()
           });
         }
@@ -324,10 +353,18 @@ async function main() {
     });
   }
 
+  // Avoid duplicate project_stats when a condo that previously had a 0-txn
+  // stat row now has inferred transactions.
+  const newStatsIds = new Set(newStats.map(s => s.condo_id));
+  const mergedStats = [
+    ...verifiedStats.filter(s => !newStatsIds.has(s.condo_id)),
+    ...newStats
+  ];
+
   const merged = {
     condos: [...existingData.condos, ...newCondos],
-    transactions: [...existingData.transactions, ...newTransactions],
-    project_stats: [...existingData.project_stats, ...newStats]
+    transactions: [...verifiedTransactions, ...newTransactions],
+    project_stats: mergedStats
   };
 
   fs.writeFileSync(OUTPUT, JSON.stringify(merged, null, 2));

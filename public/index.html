@@ -164,7 +164,7 @@
     <div class="detail-stats" id="detailStats"></div>
     <div class="chart-wrap"><canvas id="txnChart"></canvas></div>
     <h3 style="font-size:14px;color:var(--text2);margin-bottom:8px;">Transaction History</h3>
-    <div style="overflow-x:auto"><table class="txn-table" id="txnTable"><thead><tr><th>Buy Date</th><th>Sell Date</th><th>Hold (yrs)</th><th>Buy Price</th><th>Sell Price</th><th>Size</th><th>Buy PSF</th><th>Sell PSF</th><th>Annualized Return</th></tr></thead><tbody id="txnBody"></tbody></table></div>
+    <div style="overflow-x:auto"><table class="txn-table" id="txnTable"><thead><tr><th>Buy Date</th><th>Sell Date</th><th>Hold (yrs)</th><th>Buy Price</th><th>Sell Price</th><th>Size</th><th>Buy PSF</th><th>Sell PSF</th><th>Annualized Return</th><th>Source</th></tr></thead><tbody id="txnBody"></tbody></table></div>
   </div>
 
   <div class="table-wrap">
@@ -217,6 +217,11 @@ function retBadge(val) {
   if (val >= 8) return `<span class="badge green">${val.toFixed(1)}%</span>`;
   if (val >= 5) return `<span class="badge yellow">${val.toFixed(1)}%</span>`;
   return `<span class="badge red">${val.toFixed(1)}%</span>`;
+}
+
+function sourceBadge(source) {
+  if (source === 'URA-inferred') return '<span class="badge blue">URA inferred</span>';
+  return '<span class="badge" style="background:rgba(148,163,184,0.1);color:var(--text2)">verified</span>';
 }
 
 function psfBadge(psf) {
@@ -498,6 +503,7 @@ async function openDetail(id) {
           <td>S$${Math.round(buyPsf).toLocaleString()}</td>
           <td>S$${Math.round(sellPsf).toLocaleString()}</td>
           <td>${retBadge(t.annualized_return)}</td>
+          <td>${sourceBadge(t.source)}</td>
         </tr>`;
       }).join('');
     }
