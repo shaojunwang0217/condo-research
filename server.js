@@ -3,9 +3,10 @@ const cors = require('cors');
 const path = require('path');
 const { getDb } = require('./db');
 
-// Seed on startup — loads 85 condos + 1798 txns from bundled JSON
+// Seed on startup from bundled JSON, then apply geocode artifact.
 console.log('Checking for seed data...');
 require('./seed-startup');
+require('./apply-geocodes').applyGeocodes();
 
 const app = express();
 const PORT = process.env.PORT || 3456;
@@ -57,7 +58,8 @@ app.get('/api/condos', (req, res) => {
 
   const selectCols = `
     c.id, c.name, c.district, c.area, c.tenure, c.year_completed, c.total_units,
-    c.developer, c.mrt_station, c.mrt_distance,
+    c.developer, c.mrt_station, c.mrt_distance, c.address, c.postal, c.lat, c.lng,
+    c.geocode_status, c.geocode_source, c.geocode_confidence,
     ps.total_txns, ps.avg_annualized, ps.max_annualized, ps.min_annualized, ps.current_avg_psf
   `;
 
@@ -118,6 +120,30 @@ app.get('/api/areas', (req, res) => {
   res.json(rows.map(r => r.area));
 });
 
+// Geocode coverage status
+app.get('/api/geocode-status', (req, res) => {
+  const db = getDb();
+  const totals = db.prepare(`
+    SELECT
+      COUNT(*) AS total,
+      SUM(CASE WHEN lat IS NOT NULL AND lng IS NOT NULL THEN 1 ELSE 0 END) AS geocoded,
+      SUM(CASE WHEN geocode_status = 'matched' THEN 1 ELSE 0 END) AS matched,
+      SUM(CASE WHEN geocode_status = 'review' THEN 1 ELSE 0 END) AS review,
+      SUM(CASE WHEN geocode_status = 'ambiguous' THEN 1 ELSE 0 END) AS ambiguous,
+      SUM(CASE WHEN geocode_status = 'unmatched' THEN 1 ELSE 0 END) AS unmatched,
+      SUM(CASE WHEN geocode_status = 'error' THEN 1 ELSE 0 END) AS errors
+    FROM condos
+  `).get();
+  const bySource = db.prepare(`
+    SELECT COALESCE(geocode_source, 'none') AS source, COUNT(*) AS count
+    FROM condos
+    WHERE lat IS NOT NULL AND lng IS NOT NULL
+    GROUP BY COALESCE(geocode_source, 'none')
+    ORDER BY count DESC
+  `).all();
+  res.json({ ...totals, bySource });
+});
+
 // Get single condo details with transaction history
 // Reseed from seed-data.json (drops existing data and re-imports)
 app.post('/api/reseed', (req, res) => {
@@ -156,6 +182,7 @@ app.post('/api/reseed', (req, res) => {
   });
   
   tx();
+  require('./apply-geocodes').applyGeocodes();
   console.log(`Reseeded: ${data.condos.length} condos, ${data.transactions.length} txns`);
   res.json({ success: true, condos: data.condos.length, transactions: data.transactions.length });
 });

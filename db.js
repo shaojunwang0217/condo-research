@@ -66,6 +66,29 @@ function initSchema() {
   `);
 
   // Lightweight migrations for existing databases
+  const condoMigrations = [
+    `ALTER TABLE condos ADD COLUMN address TEXT`,
+    `ALTER TABLE condos ADD COLUMN postal TEXT`,
+    `ALTER TABLE condos ADD COLUMN lat REAL`,
+    `ALTER TABLE condos ADD COLUMN lng REAL`,
+    `ALTER TABLE condos ADD COLUMN geocode_status TEXT`,
+    `ALTER TABLE condos ADD COLUMN geocode_source TEXT`,
+    `ALTER TABLE condos ADD COLUMN geocode_confidence INTEGER`,
+    `ALTER TABLE condos ADD COLUMN geocode_query TEXT`,
+    `ALTER TABLE condos ADD COLUMN geocoded_at TEXT`
+  ];
+  for (const migration of condoMigrations) {
+    try {
+      db.exec(migration);
+    } catch (e) {
+      // Column already exists; ignore.
+    }
+  }
+  try {
+    db.exec(`CREATE INDEX IF NOT EXISTS idx_condos_coords ON condos(lat, lng)`);
+  } catch (e) {
+    // Index creation is best-effort for older SQLite versions.
+  }
   try {
     db.exec(`ALTER TABLE transactions ADD COLUMN source TEXT DEFAULT 'verified'`);
   } catch (e) {
