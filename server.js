@@ -141,6 +141,7 @@ app.get('/api/geocode-status', (req, res) => {
     GROUP BY COALESCE(geocode_source, 'none')
     ORDER BY count DESC
   `).all();
+  totals.unmatched = totals.total - totals.geocoded;
   res.json({ ...totals, bySource });
 });
 
